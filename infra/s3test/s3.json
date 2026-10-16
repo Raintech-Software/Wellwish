@@ -1,0 +1,11 @@
+{
+  "identities": [
+    {
+      "name": "wellwish-s3-test",
+      "credentials": [
+        { "accessKey": "wellwish-s3-test", "secretKey": "wellwish-s3-test-only" }
+      ],
+      "actions": ["Admin", "Read", "Write", "List", "Tagging"]
+    }
+  ]
+}

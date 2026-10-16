@@ -1,0 +1,10 @@
+# Development + CI tools (installed in the dev image only).
+-c base.txt
+-r base.in
+ruff
+django-stubs[compatible-mypy]>=5.2,<5.3
+pytest
+pytest-django
+factory-boy
+types-requests
+daphne  # needed by channels.testing

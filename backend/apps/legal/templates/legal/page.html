@@ -1,0 +1,14 @@
+{% extends "legal/base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<article class="card" lang="{{ shown_language }}">
+  <h1>{{ title }}</h1>
+  <p class="muted" lang="{{ language }}">{{ version_line }}</p>
+  {% if fallback %}<p class="note" lang="{{ language }}">{{ fallback_text }}</p>{% endif %}
+  {% for block in blocks %}
+    {% if block.kind == "h" %}<h2>{{ block.items.0 }}</h2>
+    {% elif block.kind == "ul" %}<ul>{% for item in block.items %}<li>{{ item }}</li>{% endfor %}</ul>
+    {% else %}<p>{{ block.items.0 }}</p>{% endif %}
+  {% endfor %}
+</article>
+{% endblock %}

@@ -1,0 +1,27 @@
+name: ww_auth
+description: "WellWish login screens shared by the patient and partner apps: phone, OTP, SMS auto-read."
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.13.3
+  flutter: ">=1.17.0"
+
+resolution: workspace
+
+dependencies:
+  flutter:
+    sdk: flutter
+  smart_auth: ^3.2.0
+  ww_core:
+    path: ../ww_core
+  ww_l10n:
+    path: ../ww_l10n
+  ww_ui:
+    path: ../ww_ui
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  dio: ^5.11.1

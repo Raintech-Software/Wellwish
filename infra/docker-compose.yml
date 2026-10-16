@@ -1,0 +1,166 @@
+# WellWish local development (Docker Desktop on WSL 2). Use .\ww.ps1, not this file directly.
+# Flutter apps and the admin panel run on Windows; everything backend runs here.
+name: wellwish
+
+x-backend: &backend
+  image: wellwish-backend:dev
+  build:
+    context: ../backend
+    args:
+      REQUIREMENTS: dev
+  env_file:
+    - ../backend/.env  # created from backend/.env.example by .\ww.ps1
+  environment:
+    # Service addresses inside the compose network (override whatever .env says)
+    DATABASE_URL: postgres://wellwish:wellwish@db:5432/wellwish
+    REDIS_URL: redis://redis:6379/0
+    CELERY_BROKER_URL: redis://redis:6379/1
+    CELERY_RESULT_BACKEND: redis://redis:6379/2
+    CHANNELS_REDIS_URL: redis://redis:6379/3
+    WATCHFILES_FORCE_POLLING: "true"  # file-change detection across the Windows mount
+  volumes:
+    - ../backend:/app
+    - ../docs:/docs
+
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: wellwish
+      POSTGRES_USER: wellwish
+      POSTGRES_PASSWORD: wellwish  # local dev only
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wellwish -d wellwish"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    <<: *backend
+    # One shell line. (A folded ">" block keeps the newlines of more-indented lines, which
+    # silently dropped --reload before.)
+    command:
+      - sh
+      - -c
+      - python manage.py migrate --noinput && uvicorn config.asgi:application --host 0.0.0.0 --port 8000 --reload --reload-dir /app
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "scripts/healthcheck.py", "api"]
+      interval: 10s
+      timeout: 8s
+      retries: 12
+      start_period: 20s
+
+  worker:
+    <<: *backend
+    # watchfiles restarts Celery when Python code changes (dev only; like the API's --reload)
+    command: watchfiles --filter python "celery -A config worker -l info -Q default,notify,money -n worker@%h --concurrency 2" /app
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "scripts/healthcheck.py", "worker"]
+      interval: 30s
+      timeout: 15s
+      retries: 5
+      start_period: 20s
+
+  beat:
+    <<: *backend
+    command: watchfiles --filter python "celery -A config beat -l info" /app
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "scripts/healthcheck.py", "beat"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  # --- Load test (PHASES 9.4): .\ww.ps1 loadtest. Not started by "up" (profile). ---
+  # The API as it runs on a server (no auto-reload, no DEBUG), on its own database and Redis
+  # numbers so the developer's data is never touched.
+  api-load:
+    <<: *backend
+    profiles: ["loadtest"]
+    environment: &loadtest-env
+      DJANGO_SETTINGS_MODULE: config.settings.loadtest
+      DATABASE_URL: postgres://wellwish:wellwish@db:5432/wellwish_loadtest
+      REDIS_URL: redis://redis:6379/8
+      CELERY_BROKER_URL: redis://redis:6379/9
+      CELERY_RESULT_BACKEND: redis://redis:6379/10
+      CHANNELS_REDIS_URL: redis://redis:6379/11
+    command:
+      - sh
+      - -c
+      - python manage.py migrate --noinput && uvicorn config.asgi:application --host 0.0.0.0 --port 8000 --workers ${LOADTEST_API_WORKERS:-1}
+    ports:
+      - "8001:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "scripts/healthcheck.py", "api"]
+      interval: 5s
+      timeout: 8s
+      retries: 24
+      start_period: 20s
+
+  worker-load:
+    <<: *backend
+    profiles: ["loadtest"]
+    environment: *loadtest-env
+    command: celery -A config worker -l warning -Q default,notify,money --concurrency 2
+    depends_on:
+      api-load:
+        condition: service_healthy
+    healthcheck:
+      disable: true
+
+  locust:
+    build: ./loadtest
+    profiles: ["loadtest"]
+    volumes:
+      - ./loadtest:/mnt/locust
+      - ../backend/.loadtest:/data:ro
+    depends_on:
+      api-load:
+        condition: service_healthy
+
+  # --- S3 test (PHASES 9B.5): .\ww.ps1 s3-test. An S3-compatible store (SeaweedFS's S3
+  # gateway; MinIO no longer publishes images) to prove the presigned POST's limits against a
+  # real S3 API before AWS exists. Not started by "up" (profile); throwaway: nothing is kept,
+  # and the keys in s3test/s3.json exist only here.
+  s3test:
+    image: chrislusf/seaweedfs:3.97
+    profiles: ["s3test"]
+    command: server -dir=/data -s3 -s3.port=8333 -s3.config=/etc/seaweedfs/s3.json
+    volumes:
+      - ./s3test/s3.json:/etc/seaweedfs/s3.json:ro
+
+volumes:
+  pgdata:

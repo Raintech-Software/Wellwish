@@ -1,0 +1,3384 @@
+{
+  "@@locale": "en",
+  "appName": "WellWish",
+  "@appName": {
+    "description": "Brand name. Same in every language."
+  },
+  "partnerBadge": "Partner",
+  "@partnerBadge": {
+    "description": "Label under the logo on the Partner app splash screen."
+  },
+  "brandTagline": "आपकी सेहत, हमारी ज़िम्मेदारी",
+  "@brandTagline": {
+    "description": "Brand tagline exactly as in the official logo. Kept in Hindi in every language."
+  },
+  "loading": "Loading…",
+  "@loading": {
+    "description": "Generic loading message."
+  },
+  "tryAgain": "Try again",
+  "@tryAgain": {
+    "description": "Retry button on error screens."
+  },
+  "somethingWentWrong": "Something went wrong. Please try again.",
+  "@somethingWentWrong": {
+    "description": "Generic error message."
+  },
+  "noInternet": "No internet connection. Check your network and try again.",
+  "@noInternet": {
+    "description": "Shown when the phone is offline or the server can't be reached."
+  },
+  "loginWelcomeBack": "Welcome Back",
+  "@loginWelcomeBack": {
+    "description": "Login screen title (mockup 2)."
+  },
+  "loginSubtitle": "Login to continue",
+  "@loginSubtitle": {
+    "description": "Login screen subtitle."
+  },
+  "createAccountTitle": "Create your account",
+  "@createAccountTitle": {
+    "description": "Title when the user tapped Create Account."
+  },
+  "createAccountSubtitle": "Enter your mobile number to get started",
+  "@createAccountSubtitle": {
+    "description": "Subtitle when the user tapped Create Account."
+  },
+  "partnerLoginSubtitle": "Log in, or join as a companion or nurse, with your mobile number",
+  "@partnerLoginSubtitle": {
+    "description": "Partner app login subtitle."
+  },
+  "partnerLoginTitle": "Welcome",
+  "@partnerLoginTitle": {
+    "description": "Partner app login title: for partners who log in and for new ones who join"
+  },
+  "partnerJoinHint": "New partner? Enter your number to start your application.",
+  "@partnerJoinHint": {
+    "description": "Line under the partner login button: new partners register with the same phone login"
+  },
+  "phoneHint": "Enter mobile number",
+  "@phoneHint": {
+    "description": "Hint inside the phone number field."
+  },
+  "sendOtp": "Send OTP",
+  "@sendOtp": {
+    "description": "Button that sends the SMS code."
+  },
+  "orDivider": "OR",
+  "@orDivider": {
+    "description": "Divider between phone login and Google login."
+  },
+  "loginWith": "Login with",
+  "@loginWith": {
+    "description": "Label above the Google button."
+  },
+  "google": "Google",
+  "@google": {
+    "description": "Google sign-in button. Brand name, not translated."
+  },
+  "newHere": "New here?",
+  "@newHere": {
+    "description": "Before the Create Account link."
+  },
+  "createAccount": "Create Account",
+  "@createAccount": {
+    "description": "Link to create an account."
+  },
+  "haveAccount": "Already have an account?",
+  "@haveAccount": {
+    "description": "Before the Login link on the create-account screen."
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login link."
+  },
+  "invalidPhone": "Enter a valid 10-digit mobile number",
+  "@invalidPhone": {
+    "description": "Phone number is not a valid Indian mobile."
+  },
+  "otpTitle": "Verify your number",
+  "@otpTitle": {
+    "description": "OTP screen title."
+  },
+  "otpSentTo": "Enter the 6-digit code sent to {phone}",
+  "@otpSentTo": {
+    "description": "OTP screen subtitle.",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+91 98765 43210"
+      }
+    }
+  },
+  "changeNumber": "Change number",
+  "@changeNumber": {
+    "description": "Go back and edit the phone number."
+  },
+  "verify": "Verify",
+  "@verify": {
+    "description": "Button that checks the OTP."
+  },
+  "resendIn": "Resend code in {seconds}s",
+  "@resendIn": {
+    "description": "Countdown before a new code can be requested.",
+    "placeholders": {
+      "seconds": {
+        "type": "int",
+        "example": "30"
+      }
+    }
+  },
+  "resendCode": "Resend code",
+  "@resendCode": {
+    "description": "Button to send a new code."
+  },
+  "codeResent": "A new code was sent",
+  "@codeResent": {
+    "description": "Snackbar after a new code was sent."
+  },
+  "otpWrong": "That code isn't right. {attempts, plural, =1{1 try left.} other{{attempts} tries left.}}",
+  "@otpWrong": {
+    "description": "Wrong OTP entered.",
+    "placeholders": {
+      "attempts": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "otpExpired": "This code has expired. Tap Resend code.",
+  "@otpExpired": {
+    "description": "OTP expired or already used."
+  },
+  "otpTooManyAttempts": "Too many wrong tries. Tap Resend code for a new one.",
+  "@otpTooManyAttempts": {
+    "description": "5 wrong tries on one code."
+  },
+  "otpLocked": "Too many wrong codes. Please try again in an hour.",
+  "@otpLocked": {
+    "description": "Phone locked after 10 wrong codes."
+  },
+  "otpRateLimited": "Too many code requests. Please try again later.",
+  "@otpRateLimited": {
+    "description": "Too many SMS requested."
+  },
+  "smsNotSent": "We couldn't send the SMS. Please try again.",
+  "@smsNotSent": {
+    "description": "The SMS provider failed."
+  },
+  "accountBlocked": "This account is blocked. Please contact WellWish support.",
+  "@accountBlocked": {
+    "description": "Blocked account tried to log in."
+  },
+  "googleFailed": "Google sign-in didn't work. Please try again.",
+  "@googleFailed": {
+    "description": "Google sign-in error."
+  },
+  "googleVerifyPhone": "Verify your mobile number once to finish signing in with Google.",
+  "@googleVerifyPhone": {
+    "description": "Shown on the login screen after Google sign-in when the phone is not verified yet."
+  },
+  "profileSetupTitle": "Tell us about you",
+  "@profileSetupTitle": {
+    "description": "Profile setup screen title (P04)."
+  },
+  "profileSetupSubtitle": "This helps your companion or nurse take good care of you.",
+  "@profileSetupSubtitle": {
+    "description": "Profile setup subtitle."
+  },
+  "fullName": "Full name",
+  "@fullName": {
+    "description": "Field label."
+  },
+  "fullNameHint": "As on your ID card",
+  "@fullNameHint": {
+    "description": "Hint in the full name field."
+  },
+  "dateOfBirth": "Date of birth",
+  "@dateOfBirth": {
+    "description": "Field label."
+  },
+  "selectDate": "Select date",
+  "@selectDate": {
+    "description": "Placeholder when no date is picked."
+  },
+  "gender": "Gender",
+  "@gender": {
+    "description": "Field label."
+  },
+  "genderFemale": "Female",
+  "@genderFemale": {
+    "description": "Gender option."
+  },
+  "genderMale": "Male",
+  "@genderMale": {
+    "description": "Gender option."
+  },
+  "genderOther": "Other",
+  "@genderOther": {
+    "description": "Gender option."
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Field label."
+  },
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "Language option, written in English."
+  },
+  "languageHindi": "हिन्दी",
+  "@languageHindi": {
+    "description": "Language option, always written in Hindi."
+  },
+  "languageOdia": "ଓଡ଼ିଆ",
+  "@languageOdia": {
+    "description": "Language option, always written in Odia."
+  },
+  "continueLabel": "Continue",
+  "@continueLabel": {
+    "description": "Generic continue button."
+  },
+  "nameRequired": "Please enter your full name",
+  "@nameRequired": {
+    "description": "Validation."
+  },
+  "dobRequired": "Please select your date of birth",
+  "@dobRequired": {
+    "description": "Validation."
+  },
+  "genderRequired": "Please select your gender",
+  "@genderRequired": {
+    "description": "Validation."
+  },
+  "consentTitle": "Before you start",
+  "@consentTitle": {
+    "description": "Consent screen title."
+  },
+  "consentSubtitle": "Please read and accept to use WellWish.",
+  "@consentSubtitle": {
+    "description": "Consent screen subtitle."
+  },
+  "consentTerms": "I accept the Terms of Use",
+  "@consentTerms": {
+    "description": "Consent checkbox."
+  },
+  "consentTermsDetail": "How bookings, payments, cancellations and refunds work.",
+  "@consentTermsDetail": {
+    "description": "Under the terms checkbox."
+  },
+  "consentPrivacy": "I accept the Privacy Policy",
+  "@consentPrivacy": {
+    "description": "Consent checkbox."
+  },
+  "consentPrivacyDetail": "Your data stays in India and is never sold.",
+  "@consentPrivacyDetail": {
+    "description": "Under the privacy checkbox."
+  },
+  "consentHealthData": "I allow WellWish to keep my health documents",
+  "@consentHealthData": {
+    "description": "Consent checkbox (DPDP Act)."
+  },
+  "consentHealthDataDetail": "They are shown only to the companion or nurse assigned to your booking, during the visit.",
+  "@consentHealthDataDetail": {
+    "description": "Under the health data checkbox."
+  },
+  "agreeAndContinue": "Agree and continue",
+  "@agreeAndContinue": {
+    "description": "Consent screen button."
+  },
+  "locationTitle": "Find hospitals near you",
+  "@locationTitle": {
+    "description": "Location permission screen title."
+  },
+  "locationBody": "Allow location so we can show hospitals and clinics close to you. We don't track you.",
+  "@locationBody": {
+    "description": "Location permission screen text."
+  },
+  "allowLocation": "Allow location",
+  "@allowLocation": {
+    "description": "Button."
+  },
+  "notNow": "Not now",
+  "@notNow": {
+    "description": "Skip button."
+  },
+  "helloName": "Hello, {name}",
+  "@helloName": {
+    "description": "Home greeting (mockup 3).",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Priyansu"
+      }
+    }
+  },
+  "homeTagline": "Take care. You matter!",
+  "@homeTagline": {
+    "description": "Under the home greeting."
+  },
+  "heroTitle": "Your Health, Our Priority",
+  "@heroTitle": {
+    "description": "Home hero card title."
+  },
+  "heroSubtitle": "Get the best care with WellWish",
+  "@heroSubtitle": {
+    "description": "Home hero card text."
+  },
+  "tileDoctors": "Doctors",
+  "@tileDoctors": {
+    "description": "Home tile."
+  },
+  "tileBookCompanion": "Book a Companion",
+  "@tileBookCompanion": {
+    "description": "Home tile."
+  },
+  "tileBookNurse": "Book a Nurse",
+  "@tileBookNurse": {
+    "description": "Home tile."
+  },
+  "tileMedicalReports": "Medical Reports",
+  "@tileMedicalReports": {
+    "description": "Home tile."
+  },
+  "tileFamily": "Family",
+  "@tileFamily": {
+    "description": "Home tile."
+  },
+  "comingSoon": "Coming soon",
+  "@comingSoon": {
+    "description": "Badge and title for parts of the app not built yet."
+  },
+  "comingSoonBody": "This part of WellWish opens in an upcoming update.",
+  "@comingSoonBody": {
+    "description": "Text for parts of the app not built yet."
+  },
+  "navHome": "Home",
+  "@navHome": {
+    "description": "Bottom navigation."
+  },
+  "navDoctors": "Doctors",
+  "@navDoctors": {
+    "description": "Bottom navigation."
+  },
+  "navReports": "Reports",
+  "@navReports": {
+    "description": "Bottom navigation."
+  },
+  "navFamily": "Family",
+  "@navFamily": {
+    "description": "Bottom navigation."
+  },
+  "navProfile": "Profile",
+  "@navProfile": {
+    "description": "Bottom navigation."
+  },
+  "profileTitle": "Profile",
+  "@profileTitle": {
+    "description": "Profile screen title (mockup 10)."
+  },
+  "verified": "Verified",
+  "@verified": {
+    "description": "Badge under the phone number."
+  },
+  "personalInformation": "Personal Information",
+  "@personalInformation": {
+    "description": "Profile row."
+  },
+  "myBookings": "My Bookings",
+  "@myBookings": {
+    "description": "Profile row."
+  },
+  "myReports": "My Reports",
+  "@myReports": {
+    "description": "Profile row."
+  },
+  "familyMembers": "Family Members",
+  "@familyMembers": {
+    "description": "Profile row."
+  },
+  "helpSupport": "Help & Support",
+  "@helpSupport": {
+    "description": "Profile row."
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Profile row and button."
+  },
+  "logoutEverywhere": "Log out on all devices",
+  "@logoutEverywhere": {
+    "description": "Profile row."
+  },
+  "logoutConfirmTitle": "Log out?",
+  "@logoutConfirmTitle": {
+    "description": "Dialog title."
+  },
+  "logoutConfirmBody": "You'll need an OTP to log in again.",
+  "@logoutConfirmBody": {
+    "description": "Dialog text."
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Dialog button."
+  },
+  "sessionExpired": "Your session ended. Please log in again.",
+  "@sessionExpired": {
+    "description": "Login screen message after the session expired."
+  },
+  "loggedInElsewhere": "You logged in on another phone, so you were logged out here.",
+  "@loggedInElsewhere": {
+    "description": "Partner app: another phone logged in with this number."
+  },
+  "updateTitle": "Update WellWish",
+  "@updateTitle": {
+    "description": "Force update screen title."
+  },
+  "updateBody": "A new version is available. Please update the app to continue.",
+  "@updateBody": {
+    "description": "Force update screen text."
+  },
+  "updateNow": "Update now",
+  "@updateNow": {
+    "description": "Force update button."
+  },
+  "partnerRegisterTitle": "Become a WellWish partner",
+  "@partnerRegisterTitle": {
+    "description": "Partner app screen after login (registration placeholder)."
+  },
+  "partnerRegisterBody": "Registration for companions and nurses opens in the next update. You'll be able to add your details and documents here.",
+  "@partnerRegisterBody": {
+    "description": "Partner registration placeholder text."
+  },
+  "loggedInAs": "Logged in as {phone}",
+  "@loggedInAs": {
+    "description": "Shows which number is logged in.",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+91 98765 43210"
+      }
+    }
+  },
+  "registerRoleTitle": "What work will you do?",
+  "@registerRoleTitle": {
+    "description": "Partner registration: choose a role."
+  },
+  "registerRoleSubtitle": "You can change this until you send your application.",
+  "@registerRoleSubtitle": {
+    "description": "Role screen subtitle."
+  },
+  "roleCompanion": "Companion",
+  "@roleCompanion": {
+    "description": "Partner role."
+  },
+  "roleCompanionBody": "Take patients to the doctor, help at the hospital, run medicine errands and care for elders at home.",
+  "@roleCompanionBody": {
+    "description": "Companion role description."
+  },
+  "roleNurse": "Nurse",
+  "@roleNurse": {
+    "description": "Partner role."
+  },
+  "roleNurseBody": "Injections, wound dressing, IV drips and nursing shifts at home. Needs a nursing qualification and council registration.",
+  "@roleNurseBody": {
+    "description": "Nurse role description."
+  },
+  "registerHubSubtitle": "Finish these steps, then send your application for review.",
+  "@registerHubSubtitle": {
+    "description": "Registration steps screen subtitle."
+  },
+  "stepRole": "Work type",
+  "@stepRole": {
+    "description": "Registration step."
+  },
+  "stepContact": "Alternate number and email",
+  "@stepContact": {
+    "description": "Registration step."
+  },
+  "stepProfile": "Your profile",
+  "@stepProfile": {
+    "description": "Registration step."
+  },
+  "stepDocuments": "Documents",
+  "@stepDocuments": {
+    "description": "Registration step."
+  },
+  "stepDone": "Done",
+  "@stepDone": {
+    "description": "Step status."
+  },
+  "stepTodo": "To do",
+  "@stepTodo": {
+    "description": "Step status."
+  },
+  "documentsProgress": "{done} of {total} uploaded",
+  "@documentsProgress": {
+    "description": "Documents progress.",
+    "placeholders": {
+      "done": {
+        "type": "int",
+        "example": "3"
+      },
+      "total": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+  "submitForReview": "Send for review",
+  "@submitForReview": {
+    "description": "Submit the application."
+  },
+  "submitHint": "Finish every step to send your application.",
+  "@submitHint": {
+    "description": "Shown while submit is disabled."
+  },
+  "change": "Change",
+  "@change": {
+    "description": "Change something already set."
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button."
+  },
+  "contactTitle": "Phones and email",
+  "@contactTitle": {
+    "description": "R04 title."
+  },
+  "loginNumber": "Login number",
+  "@loginNumber": {
+    "description": "The primary phone."
+  },
+  "alternateNumber": "Alternate number",
+  "@alternateNumber": {
+    "description": "Second phone."
+  },
+  "alternateHelp": "A second number, e.g. a family member's. WellWish calls it if we can't reach you.",
+  "@alternateHelp": {
+    "description": "Alternate phone help."
+  },
+  "sendCode": "Send code",
+  "@sendCode": {
+    "description": "Send a verification code."
+  },
+  "codeSentTo": "Enter the 6-digit code sent to {target}",
+  "@codeSentTo": {
+    "description": "After sending a code.",
+    "placeholders": {
+      "target": {
+        "type": "String",
+        "example": "a@example.com"
+      }
+    }
+  },
+  "emailLabel": "Email",
+  "@emailLabel": {
+    "description": "Email field."
+  },
+  "emailHelp": "We email a 6-digit code to check it.",
+  "@emailHelp": {
+    "description": "Email help."
+  },
+  "invalidEmail": "Enter a valid email.",
+  "@invalidEmail": {
+    "description": "Email validation."
+  },
+  "yourPhoto": "Your photo",
+  "@yourPhoto": {
+    "description": "Profile photo label."
+  },
+  "photoHelp": "A clear photo of your face. Patients see it.",
+  "@photoHelp": {
+    "description": "Profile photo help."
+  },
+  "takePhoto": "Take photo",
+  "@takePhoto": {
+    "description": "Camera."
+  },
+  "chooseFromGallery": "Choose from gallery",
+  "@chooseFromGallery": {
+    "description": "Gallery."
+  },
+  "choosePdf": "Choose a PDF",
+  "@choosePdf": {
+    "description": "File picker."
+  },
+  "homeAddress": "Home address",
+  "@homeAddress": {
+    "description": "Address label."
+  },
+  "homeAddressHint": "House, street, area, PIN code",
+  "@homeAddressHint": {
+    "description": "Address hint."
+  },
+  "homeLocation": "Home location",
+  "@homeLocation": {
+    "description": "Location label."
+  },
+  "homeLocationHelp": "Stand at home and tap the button. It helps WellWish give you jobs nearby.",
+  "@homeLocationHelp": {
+    "description": "Location help."
+  },
+  "useCurrentLocation": "Use my current location",
+  "@useCurrentLocation": {
+    "description": "Location button."
+  },
+  "locationSaved": "Location added",
+  "@locationSaved": {
+    "description": "Location captured."
+  },
+  "locationDenied": "Location not shared. Allow location for WellWish in your phone's settings.",
+  "@locationDenied": {
+    "description": "Location permission denied."
+  },
+  "languagesYouSpeak": "Languages you speak",
+  "@languagesYouSpeak": {
+    "description": "Languages label."
+  },
+  "skillsLabel": "Skills",
+  "@skillsLabel": {
+    "description": "Skills label."
+  },
+  "emergencyContact": "Emergency contact",
+  "@emergencyContact": {
+    "description": "Emergency contact section."
+  },
+  "emergencyName": "Their name",
+  "@emergencyName": {
+    "description": "Emergency contact name."
+  },
+  "emergencyPhone": "Their phone number",
+  "@emergencyPhone": {
+    "description": "Emergency contact phone."
+  },
+  "photoRequired": "Add your photo.",
+  "@photoRequired": {
+    "description": "Validation."
+  },
+  "addressRequired": "Enter your home address.",
+  "@addressRequired": {
+    "description": "Validation."
+  },
+  "locationRequired": "Add your home location.",
+  "@locationRequired": {
+    "description": "Validation."
+  },
+  "languagesRequired": "Pick at least one language.",
+  "@languagesRequired": {
+    "description": "Validation."
+  },
+  "fixMarkedFields": "Some details are missing. Check the fields marked in red.",
+  "@fixMarkedFields": {
+    "description": "Shown by Save when the form has errors further up the screen."
+  },
+  "emergencyRequired": "Enter an emergency contact.",
+  "@emergencyRequired": {
+    "description": "Validation."
+  },
+  "languageBengali": "Bengali",
+  "@languageBengali": {
+    "description": "Language name."
+  },
+  "languageTelugu": "Telugu",
+  "@languageTelugu": {
+    "description": "Language name."
+  },
+  "skillElderlyCare": "Elderly care",
+  "@skillElderlyCare": {
+    "description": "Skill."
+  },
+  "skillWheelchair": "Wheelchair help",
+  "@skillWheelchair": {
+    "description": "Skill."
+  },
+  "skillPaperwork": "Hospital paperwork",
+  "@skillPaperwork": {
+    "description": "Skill."
+  },
+  "skillTwoWheeler": "Two-wheeler",
+  "@skillTwoWheeler": {
+    "description": "Skill."
+  },
+  "skillCar": "Car driving",
+  "@skillCar": {
+    "description": "Skill."
+  },
+  "skillInjections": "Injections",
+  "@skillInjections": {
+    "description": "Skill."
+  },
+  "skillDressing": "Wound dressing",
+  "@skillDressing": {
+    "description": "Skill."
+  },
+  "skillIvDrip": "IV drip",
+  "@skillIvDrip": {
+    "description": "Skill."
+  },
+  "skillPostSurgery": "Post-surgery care",
+  "@skillPostSurgery": {
+    "description": "Skill."
+  },
+  "documentsSubtitle": "Photos must be clear and readable. A PDF is fine too.",
+  "@documentsSubtitle": {
+    "description": "Documents screen subtitle."
+  },
+  "docRequired": "Required",
+  "@docRequired": {
+    "description": "Document tag."
+  },
+  "docOptional": "Optional",
+  "@docOptional": {
+    "description": "Document tag."
+  },
+  "docMissing": "Not uploaded",
+  "@docMissing": {
+    "description": "Document status."
+  },
+  "docPending": "Being checked",
+  "@docPending": {
+    "description": "Document status."
+  },
+  "docApproved": "Approved",
+  "@docApproved": {
+    "description": "Document status."
+  },
+  "docRejected": "Change needed",
+  "@docRejected": {
+    "description": "Document status."
+  },
+  "docExpired": "Expired",
+  "@docExpired": {
+    "description": "Document status."
+  },
+  "upload": "Upload",
+  "@upload": {
+    "description": "Upload button."
+  },
+  "uploadAgain": "Upload again",
+  "@uploadAgain": {
+    "description": "Re-upload button."
+  },
+  "uploadNew": "Upload new",
+  "@uploadNew": {
+    "description": "Renewal button."
+  },
+  "uploading": "Uploading…",
+  "@uploading": {
+    "description": "Upload progress."
+  },
+  "documentNumber": "Number on the document",
+  "@documentNumber": {
+    "description": "Document number field."
+  },
+  "aadhaarNumberHelp": "12 digits. Only the last 4 are saved.",
+  "@aadhaarNumberHelp": {
+    "description": "Aadhaar help."
+  },
+  "panNumberHelp": "10 characters, e.g. ABCDE1234F. Only the last 4 are saved.",
+  "@panNumberHelp": {
+    "description": "PAN help."
+  },
+  "validTill": "Valid till",
+  "@validTill": {
+    "description": "Expiry date field."
+  },
+  "validTillDate": "Valid till {date}",
+  "@validTillDate": {
+    "description": "Expiry date shown.",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "31 Jan 2027"
+      }
+    }
+  },
+  "numberRequired": "Enter the number.",
+  "@numberRequired": {
+    "description": "Validation."
+  },
+  "expiryRequired": "Pick the valid-till date.",
+  "@expiryRequired": {
+    "description": "Validation."
+  },
+  "renewalPending": "New one is being checked",
+  "@renewalPending": {
+    "description": "Renewal waiting."
+  },
+  "renewalRejected": "New one not accepted: {reason}",
+  "@renewalRejected": {
+    "description": "Renewal rejected.",
+    "placeholders": {
+      "reason": {
+        "type": "String",
+        "example": "Blurred"
+      }
+    }
+  },
+  "cameraOnlyHelp": "Take it now with the front camera.",
+  "@cameraOnlyHelp": {
+    "description": "Live selfie help."
+  },
+  "statusTitle": "Application status",
+  "@statusTitle": {
+    "description": "R07 title."
+  },
+  "statusSubmitted": "Submitted",
+  "@statusSubmitted": {
+    "description": "Timeline step."
+  },
+  "statusUnderReview": "Under review",
+  "@statusUnderReview": {
+    "description": "Timeline step."
+  },
+  "statusChangesNeeded": "Changes needed",
+  "@statusChangesNeeded": {
+    "description": "Timeline step."
+  },
+  "statusApproved": "Approved",
+  "@statusApproved": {
+    "description": "Timeline step."
+  },
+  "statusSubmittedBody": "We received your application and will check your documents soon.",
+  "@statusSubmittedBody": {
+    "description": "Submitted text."
+  },
+  "statusUnderReviewBody": "A WellWish team member is checking your documents now.",
+  "@statusUnderReviewBody": {
+    "description": "Under review text."
+  },
+  "statusChangesBody": "Some documents need a change. See the reasons below, upload them again and send again.",
+  "@statusChangesBody": {
+    "description": "Changes text."
+  },
+  "fixDocuments": "Fix documents",
+  "@fixDocuments": {
+    "description": "Button."
+  },
+  "noteFromWellWish": "Note from WellWish",
+  "@noteFromWellWish": {
+    "description": "Admin note heading."
+  },
+  "statusRejectedTitle": "Application not approved",
+  "@statusRejectedTitle": {
+    "description": "Rejected heading."
+  },
+  "statusSuspendedTitle": "Account paused",
+  "@statusSuspendedTitle": {
+    "description": "Suspended heading."
+  },
+  "statusSuspendedBody": "You can't get jobs right now. Call WellWish support to know more.",
+  "@statusSuspendedBody": {
+    "description": "Suspended text."
+  },
+  "suspendedExpiredBody": "A document has expired. Upload a new one; you can work again once it's approved.",
+  "@suspendedExpiredBody": {
+    "description": "Suspended for expiry."
+  },
+  "statusDeactivatedTitle": "Account closed",
+  "@statusDeactivatedTitle": {
+    "description": "Deactivated heading."
+  },
+  "callSupport": "Call WellWish support",
+  "@callSupport": {
+    "description": "Support button."
+  },
+  "refresh": "Refresh",
+  "@refresh": {
+    "description": "Reload button."
+  },
+  "navJobs": "Jobs",
+  "@navJobs": {
+    "description": "Bottom nav."
+  },
+  "youAreApproved": "You're an approved WellWish partner",
+  "@youAreApproved": {
+    "description": "Approved home card."
+  },
+  "availableToday": "Available today",
+  "@availableToday": {
+    "description": "Availability switch."
+  },
+  "availableTodayHelp": "Turn on when you can take jobs today.",
+  "@availableTodayHelp": {
+    "description": "Availability help."
+  },
+  "verifyContactTitle": "Verify your contact details",
+  "@verifyContactTitle": {
+    "description": "Approved, contact not verified."
+  },
+  "verifyContactBody": "Verify your alternate number and email so WellWish can always reach you.",
+  "@verifyContactBody": {
+    "description": "Approved, contact not verified."
+  },
+  "noJobsYet": "No jobs yet",
+  "@noJobsYet": {
+    "description": "Jobs empty state."
+  },
+  "noJobsBody": "Jobs from WellWish will appear here.",
+  "@noJobsBody": {
+    "description": "Jobs empty state."
+  },
+  "profileAndDocuments": "Profile and documents",
+  "@profileAndDocuments": {
+    "description": "R16 title."
+  },
+  "notificationsTitle": "Notifications",
+  "@notificationsTitle": {
+    "description": "Inbox title."
+  },
+  "noNotifications": "No messages yet.",
+  "@noNotifications": {
+    "description": "Inbox empty."
+  },
+  "notificationsKept": "Messages from the last 30 days are kept here.",
+  "@notificationsKept": {
+    "description": "Line at the end of the family's Notifications list (P25): older messages are removed (v2.33)"
+  },
+  "notificationsUnread": "Notifications, {count} unread",
+  "@notificationsUnread": {
+    "description": "Screen-reader label of the bell on Home with unread messages (P25)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "errSameAsPrimary": "Enter a different number from your login number.",
+  "@errSameAsPrimary": {
+    "description": "Error."
+  },
+  "errEmailTaken": "Another partner already uses this email.",
+  "@errEmailTaken": {
+    "description": "Error."
+  },
+  "errCodeWrong": "That code isn't right. Check and try again.",
+  "@errCodeWrong": {
+    "description": "Error."
+  },
+  "errWaitBeforeResend": "Please wait a little before asking for another code.",
+  "@errWaitBeforeResend": {
+    "description": "Error."
+  },
+  "errEmailNotSent": "We couldn't send the email. Please try again.",
+  "@errEmailNotSent": {
+    "description": "Error."
+  },
+  "errTooYoung": "Partners must be 18 or older.",
+  "@errTooYoung": {
+    "description": "Error."
+  },
+  "errEmergencyIsYou": "The emergency contact must be someone else.",
+  "@errEmergencyIsYou": {
+    "description": "Error."
+  },
+  "errInvalidAadhaar": "Enter the 12-digit Aadhaar number.",
+  "@errInvalidAadhaar": {
+    "description": "Error."
+  },
+  "errInvalidPan": "Enter the 10-character PAN.",
+  "@errInvalidPan": {
+    "description": "Error."
+  },
+  "errAlreadyExpired": "This document has already expired.",
+  "@errAlreadyExpired": {
+    "description": "Error."
+  },
+  "errInvalidFile": "This file can't be used. Choose a clear photo or a PDF.",
+  "@errInvalidFile": {
+    "description": "Error."
+  },
+  "errFileTooLarge": "The file is too large (max 10 MB).",
+  "@errFileTooLarge": {
+    "description": "Error."
+  },
+  "errDocumentsMissing": "Upload every required document first.",
+  "@errDocumentsMissing": {
+    "description": "Error."
+  },
+  "errDetailsMissing": "Finish your phones, email and profile first.",
+  "@errDetailsMissing": {
+    "description": "Error."
+  },
+  "errNotEditable": "This can't be changed while your application is being checked.",
+  "@errNotEditable": {
+    "description": "Error."
+  },
+  "locationOff": "Location is off. Turn on location on your phone, then try again.",
+  "@locationOff": {
+    "description": "Location services are turned off on the phone."
+  },
+  "familyTitle": "Family",
+  "@familyTitle": {
+    "description": "Family screen title (P22)."
+  },
+  "familyIntroTitle": "Stay connected with your loved ones",
+  "@familyIntroTitle": {
+    "description": "Family intro card title."
+  },
+  "familyIntroBody": "Add parents and relatives to book care for them, even in another city.",
+  "@familyIntroBody": {
+    "description": "Family intro card text."
+  },
+  "addMember": "Add member",
+  "@addMember": {
+    "description": "Button: add a family member."
+  },
+  "ageYears": "{age} yrs",
+  "@ageYears": {
+    "description": "Age in years.",
+    "placeholders": {
+      "age": {
+        "type": "int",
+        "example": "72"
+      }
+    }
+  },
+  "noFamilyYet": "No family members yet",
+  "@noFamilyYet": {
+    "description": "Empty family list."
+  },
+  "relationSelf": "You",
+  "@relationSelf": {
+    "description": "Relation: the account owner."
+  },
+  "relationMother": "Mother",
+  "@relationMother": {
+    "description": "Relation."
+  },
+  "relationFather": "Father",
+  "@relationFather": {
+    "description": "Relation."
+  },
+  "relationGrandmother": "Grandmother",
+  "@relationGrandmother": {
+    "description": "Relation."
+  },
+  "relationGrandfather": "Grandfather",
+  "@relationGrandfather": {
+    "description": "Relation."
+  },
+  "relationSpouse": "Spouse",
+  "@relationSpouse": {
+    "description": "Relation."
+  },
+  "relationChild": "Child",
+  "@relationChild": {
+    "description": "Relation."
+  },
+  "relationSibling": "Brother / Sister",
+  "@relationSibling": {
+    "description": "Relation."
+  },
+  "relationOther": "Other",
+  "@relationOther": {
+    "description": "Relation."
+  },
+  "addMemberTitle": "Add family member",
+  "@addMemberTitle": {
+    "description": "P28 title (add)."
+  },
+  "editDetailsTitle": "Edit details",
+  "@editDetailsTitle": {
+    "description": "P28 title (edit)."
+  },
+  "relation": "Relation",
+  "@relation": {
+    "description": "Field label."
+  },
+  "relationRequired": "Choose how they are related to you.",
+  "@relationRequired": {
+    "description": "Validation."
+  },
+  "theirPhone": "Their mobile number (optional)",
+  "@theirPhone": {
+    "description": "Field label."
+  },
+  "theirPhoneHelp": "They get SMS with the companion's name and the visit OTP.",
+  "@theirPhoneHelp": {
+    "description": "Help under the member phone."
+  },
+  "languageTheySpeak": "Language they speak",
+  "@languageTheySpeak": {
+    "description": "Field label."
+  },
+  "healthNotes": "Health notes",
+  "@healthNotes": {
+    "description": "Section title."
+  },
+  "healthNotesHelp": "Only the companion or nurse on the job sees these.",
+  "@healthNotesHelp": {
+    "description": "Privacy note."
+  },
+  "conditions": "Conditions",
+  "@conditions": {
+    "description": "Field label."
+  },
+  "conditionsHint": "e.g. diabetes, BP",
+  "@conditionsHint": {
+    "description": "Hint."
+  },
+  "allergies": "Allergies",
+  "@allergies": {
+    "description": "Field label."
+  },
+  "mobility": "Getting around",
+  "@mobility": {
+    "description": "Field label: mobility."
+  },
+  "mobilityWalksAlone": "Walks alone",
+  "@mobilityWalksAlone": {
+    "description": "Mobility choice."
+  },
+  "mobilityNeedsSupport": "Needs support",
+  "@mobilityNeedsSupport": {
+    "description": "Mobility choice."
+  },
+  "mobilityWheelchair": "Wheelchair",
+  "@mobilityWheelchair": {
+    "description": "Mobility choice."
+  },
+  "sensoryNotes": "Hearing or vision",
+  "@sensoryNotes": {
+    "description": "Field label."
+  },
+  "sensoryHint": "e.g. hard of hearing",
+  "@sensoryHint": {
+    "description": "Hint."
+  },
+  "emergencyContactHelp": "Leave empty to use your own number.",
+  "@emergencyContactHelp": {
+    "description": "Help under emergency contact."
+  },
+  "emergencyIncomplete": "Give both the name and the phone, or leave both empty.",
+  "@emergencyIncomplete": {
+    "description": "Validation."
+  },
+  "consentMember": "I have their permission to save these details and share them with WellWish partners for their care.",
+  "@consentMember": {
+    "description": "Consent tick (DPDP)."
+  },
+  "consentRequired": "Please tick to confirm their permission.",
+  "@consentRequired": {
+    "description": "Validation."
+  },
+  "notGiven": "Not given",
+  "@notGiven": {
+    "description": "Empty value."
+  },
+  "detailsTitle": "Details",
+  "@detailsTitle": {
+    "description": "Section title."
+  },
+  "mobileLabel": "Mobile",
+  "@mobileLabel": {
+    "description": "Label."
+  },
+  "addressesTitle": "Addresses",
+  "@addressesTitle": {
+    "description": "Section title."
+  },
+  "addAddress": "Add address",
+  "@addAddress": {
+    "description": "Button."
+  },
+  "noAddresses": "No address saved yet.",
+  "@noAddresses": {
+    "description": "Empty list."
+  },
+  "noDocumentsYet": "No documents yet.",
+  "@noDocumentsYet": {
+    "description": "Empty list."
+  },
+  "seeAll": "See all",
+  "@seeAll": {
+    "description": "Link."
+  },
+  "bookingsTitle": "Bookings",
+  "@bookingsTitle": {
+    "description": "Section title."
+  },
+  "noBookingsYet": "No bookings yet.",
+  "@noBookingsYet": {
+    "description": "Empty list."
+  },
+  "bookForName": "Book for {name}",
+  "@bookForName": {
+    "description": "Button.",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Mother"
+      }
+    }
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Button."
+  },
+  "remove": "Remove",
+  "@remove": {
+    "description": "Button."
+  },
+  "removeMember": "Remove from family",
+  "@removeMember": {
+    "description": "Button."
+  },
+  "removeMemberTitle": "Remove {name}?",
+  "@removeMemberTitle": {
+    "description": "Confirm title.",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Sabitri"
+      }
+    }
+  },
+  "removeMemberBody": "They are hidden from the app. Past bookings keep their history.",
+  "@removeMemberBody": {
+    "description": "Confirm body."
+  },
+  "outsideServiceArea": "WellWish doesn't serve this area yet.",
+  "@outsideServiceArea": {
+    "description": "Address warning."
+  },
+  "addAddressTitle": "Add address",
+  "@addAddressTitle": {
+    "description": "P24 title (add)."
+  },
+  "editAddressTitle": "Edit address",
+  "@editAddressTitle": {
+    "description": "P24 title (edit)."
+  },
+  "addressForName": "For {name}",
+  "@addressForName": {
+    "description": "Whose address.",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Mother"
+      }
+    }
+  },
+  "mapHelp": "Move the map so the pin sits on the house.",
+  "@mapHelp": {
+    "description": "Map help."
+  },
+  "addressLabel": "Name this address",
+  "@addressLabel": {
+    "description": "Field label."
+  },
+  "addressLabelHint": "e.g. Home",
+  "@addressLabelHint": {
+    "description": "Hint."
+  },
+  "labelHome": "Home",
+  "@labelHome": {
+    "description": "Quick label."
+  },
+  "labelWork": "Work",
+  "@labelWork": {
+    "description": "Quick label."
+  },
+  "addressLine": "Full address",
+  "@addressLine": {
+    "description": "Field label."
+  },
+  "landmark": "Landmark (optional)",
+  "@landmark": {
+    "description": "Field label."
+  },
+  "addressNotes": "Notes for the companion (optional)",
+  "@addressNotes": {
+    "description": "Field label."
+  },
+  "addressNotesHint": "Gate, floor, lift",
+  "@addressNotesHint": {
+    "description": "Hint."
+  },
+  "labelRequired": "Give the address a name.",
+  "@labelRequired": {
+    "description": "Validation."
+  },
+  "addressLineRequired": "Enter the full address.",
+  "@addressLineRequired": {
+    "description": "Validation."
+  },
+  "savedOutsideArea": "Saved. WellWish doesn't serve this area yet, so it can't be booked.",
+  "@savedOutsideArea": {
+    "description": "After saving an address outside every service area."
+  },
+  "mapAttribution": "© OpenStreetMap contributors",
+  "@mapAttribution": {
+    "description": "Required map credit."
+  },
+  "tabAll": "All",
+  "@tabAll": {
+    "description": "Documents tab."
+  },
+  "tabReports": "Reports",
+  "@tabReports": {
+    "description": "Documents tab."
+  },
+  "tabPrescriptions": "Prescriptions",
+  "@tabPrescriptions": {
+    "description": "Documents tab."
+  },
+  "everyone": "Everyone",
+  "@everyone": {
+    "description": "Member filter: all members."
+  },
+  "uploadDocument": "Upload document",
+  "@uploadDocument": {
+    "description": "Button / sheet title."
+  },
+  "docTypePrescription": "Prescription",
+  "@docTypePrescription": {
+    "description": "Document type."
+  },
+  "docTypeLabReport": "Lab report",
+  "@docTypeLabReport": {
+    "description": "Document type."
+  },
+  "docTypeScan": "X-ray / scan",
+  "@docTypeScan": {
+    "description": "Document type."
+  },
+  "docTypeDischarge": "Discharge summary",
+  "@docTypeDischarge": {
+    "description": "Document type."
+  },
+  "docTypeId": "ID",
+  "@docTypeId": {
+    "description": "Document type."
+  },
+  "docTypeOther": "Other",
+  "@docTypeOther": {
+    "description": "Document type."
+  },
+  "forWhom": "For whom",
+  "@forWhom": {
+    "description": "Field label."
+  },
+  "documentType": "Type",
+  "@documentType": {
+    "description": "Field label."
+  },
+  "documentTitle": "Name",
+  "@documentTitle": {
+    "description": "Field label: document name."
+  },
+  "documentTitleHint": "e.g. Blood test",
+  "@documentTitleHint": {
+    "description": "Hint."
+  },
+  "documentDate": "Date on the document (optional)",
+  "@documentDate": {
+    "description": "Field label."
+  },
+  "chooseFile": "The file",
+  "@chooseFile": {
+    "description": "Field label."
+  },
+  "fileChosen": "File ready",
+  "@fileChosen": {
+    "description": "After picking a file."
+  },
+  "fileRequired": "Choose a photo or a PDF.",
+  "@fileRequired": {
+    "description": "Validation."
+  },
+  "titleRequired": "Give the document a name.",
+  "@titleRequired": {
+    "description": "Validation."
+  },
+  "view": "View",
+  "@view": {
+    "description": "Button."
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Button."
+  },
+  "deleteDocumentTitle": "Delete this document?",
+  "@deleteDocumentTitle": {
+    "description": "Confirm title."
+  },
+  "deleteDocumentBody": "The file is deleted for good.",
+  "@deleteDocumentBody": {
+    "description": "Confirm body."
+  },
+  "storageUsed": "{used} of {total} used",
+  "@storageUsed": {
+    "description": "Storage line.",
+    "placeholders": {
+      "used": {
+        "type": "String",
+        "example": "12 MB"
+      },
+      "total": {
+        "type": "String",
+        "example": "200 MB"
+      }
+    }
+  },
+  "noDocumentsBody": "Upload prescriptions and reports once and use them in every booking.",
+  "@noDocumentsBody": {
+    "description": "Empty state."
+  },
+  "loadMore": "Load more",
+  "@loadMore": {
+    "description": "Button."
+  },
+  "openInPhone": "Opens in your phone's PDF app.",
+  "@openInPhone": {
+    "description": "PDF note."
+  },
+  "cannotOpen": "This file can't be opened here.",
+  "@cannotOpen": {
+    "description": "Error."
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "P27 title."
+  },
+  "notificationsLabel": "Notifications",
+  "@notificationsLabel": {
+    "description": "Settings row."
+  },
+  "notificationsHelp": "Turn WellWish notifications on or off in your phone's settings.",
+  "@notificationsHelp": {
+    "description": "Settings help."
+  },
+  "openPhoneSettings": "Open phone settings",
+  "@openPhoneSettings": {
+    "description": "Button."
+  },
+  "deleteAccount": "Delete my account",
+  "@deleteAccount": {
+    "description": "Settings row."
+  },
+  "deleteAccountHelp": "Removes your profile, family, addresses and documents.",
+  "@deleteAccountHelp": {
+    "description": "Settings help."
+  },
+  "deleteAccountTitle": "Delete your account?",
+  "@deleteAccountTitle": {
+    "description": "Confirm title."
+  },
+  "deleteAccountBody": "You will be logged out now. Your profile, family members, addresses and documents are deleted after {days} days. Log in again before then to keep your account. Payment records are kept, as the law requires.",
+  "@deleteAccountBody": {
+    "description": "Confirm body.",
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "example": "7"
+      }
+    }
+  },
+  "deleteAccountConfirm": "Delete account",
+  "@deleteAccountConfirm": {
+    "description": "Confirm button."
+  },
+  "accountDeletionRequested": "Your account will be deleted soon. Log in again to keep it.",
+  "@accountDeletionRequested": {
+    "description": "Login screen message after a deletion request."
+  },
+  "errTooManyMembers": "You've reached the most family members you can add.",
+  "@errTooManyMembers": {
+    "description": "Error."
+  },
+  "errTooManyAddresses": "Up to 10 addresses per person. Remove an old one first.",
+  "@errTooManyAddresses": {
+    "description": "Error."
+  },
+  "errStorageFull": "Your documents are using all 200 MB. Delete some old ones first.",
+  "@errStorageFull": {
+    "description": "Error."
+  },
+  "errDateInFuture": "The date can't be in the future.",
+  "@errDateInFuture": {
+    "description": "Error."
+  },
+  "errNotFound": "This was removed or isn't yours.",
+  "@errNotFound": {
+    "description": "Error (404)."
+  },
+  "memberNameHint": "Their full name",
+  "@memberNameHint": {
+    "description": "Hint on the family member's name field."
+  },
+  "spokenOdia": "Odia",
+  "@spokenOdia": {
+    "description": "A language a family member speaks (shown in the app's language)."
+  },
+  "spokenHindi": "Hindi",
+  "@spokenHindi": {
+    "description": "A language a family member speaks."
+  },
+  "spokenEnglish": "English",
+  "@spokenEnglish": {
+    "description": "A language a family member speaks."
+  },
+  "spokenBengali": "Bengali",
+  "@spokenBengali": {
+    "description": "A language a family member speaks."
+  },
+  "spokenTelugu": "Telugu",
+  "@spokenTelugu": {
+    "description": "A language a family member speaks."
+  },
+  "alsoDeleteDocuments": "Also delete their medical documents",
+  "@alsoDeleteDocuments": {
+    "description": "Checkbox in the remove-member dialog."
+  },
+  "pinRequired": "Move the map so the pin sits on the house, or use your current location.",
+  "@pinRequired": {
+    "description": "Saving a new address without placing the pin."
+  },
+  "notificationsLater": "Phone notifications arrive in a coming update. Until then, check the app for updates.",
+  "@notificationsLater": {
+    "description": "Settings: push notifications are not set up yet (Firebase)."
+  },
+  "photoTooLarge": "This photo is too large (max 5 MB).",
+  "@photoTooLarge": {
+    "description": "A member photo over 5 MB."
+  },
+  "accountDeletionOn": "Your account will be deleted on {date}. Log in again before then to keep it.",
+  "@accountDeletionOn": {
+    "description": "Account deletion.",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "16 Oct 2026"
+      }
+    }
+  },
+  "tabDoctors": "Doctors",
+  "@tabDoctors": {
+    "description": "Phase 5: directory and booking."
+  },
+  "tabHospitals": "Hospitals",
+  "@tabHospitals": {
+    "description": "Phase 5: directory and booking."
+  },
+  "searchDoctorsHint": "Search doctor or speciality…",
+  "@searchDoctorsHint": {
+    "description": "Phase 5: directory and booking."
+  },
+  "searchHospitalsHint": "Search hospital, area or doctor…",
+  "@searchHospitalsHint": {
+    "description": "Phase 5: directory and booking."
+  },
+  "allSpecialities": "All",
+  "@allSpecialities": {
+    "description": "Phase 5: directory and booking."
+  },
+  "viewProfile": "View Profile",
+  "@viewProfile": {
+    "description": "Phase 5: directory and booking."
+  },
+  "noDoctorsFound": "No doctors found",
+  "@noDoctorsFound": {
+    "description": "Phase 5: directory and booking."
+  },
+  "noHospitalsFound": "No hospitals found",
+  "@noHospitalsFound": {
+    "description": "Phase 5: directory and booking."
+  },
+  "tryAnotherSearch": "Try another search or speciality.",
+  "@tryAnotherSearch": {
+    "description": "Phase 5: directory and booking."
+  },
+  "kmAway": "{km} km away",
+  "@kmAway": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "hospitalsWithin": "Hospitals within {km} km",
+  "@hospitalsWithin": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "km": {
+        "type": "int"
+      }
+    }
+  },
+  "hospitalsAll": "All hospitals",
+  "@hospitalsAll": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalsNoLocation": "Allow location to see the closest hospitals first.",
+  "@hospitalsNoLocation": {
+    "description": "Phase 5: directory and booking."
+  },
+  "showMap": "Map",
+  "@showMap": {
+    "description": "Phase 5: directory and booking."
+  },
+  "showList": "List",
+  "@showList": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalTypeHospital": "Hospital",
+  "@hospitalTypeHospital": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalTypeClinic": "Clinic",
+  "@hospitalTypeClinic": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalTypeDiagnostic": "Diagnostic centre",
+  "@hospitalTypeDiagnostic": {
+    "description": "Phase 5: directory and booking."
+  },
+  "opdHours": "OPD hours",
+  "@opdHours": {
+    "description": "Phase 5: directory and booking."
+  },
+  "departments": "Departments",
+  "@departments": {
+    "description": "Phase 5: directory and booking."
+  },
+  "doctorsHere": "Doctors here",
+  "@doctorsHere": {
+    "description": "Phase 5: directory and booking."
+  },
+  "doctorCount": "{count, plural, =0{No doctors listed} =1{1 doctor} other{{count} doctors}}",
+  "@doctorCount": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "callLabel": "Call",
+  "@callLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "bookCompanionHere": "Book a companion to this hospital",
+  "@bookCompanionHere": {
+    "description": "Phase 5: directory and booking."
+  },
+  "bookCompanionForDoctor": "Book a companion for this doctor",
+  "@bookCompanionForDoctor": {
+    "description": "Phase 5: directory and booking."
+  },
+  "qualifications": "Qualifications",
+  "@qualifications": {
+    "description": "Phase 5: directory and booking."
+  },
+  "opdDays": "OPD days and times",
+  "@opdDays": {
+    "description": "Phase 5: directory and booking."
+  },
+  "doctorSpeaks": "Speaks",
+  "@doctorSpeaks": {
+    "description": "Phase 5: directory and booking."
+  },
+  "doctorHospitals": "Sees patients at",
+  "@doctorHospitals": {
+    "description": "Phase 5: directory and booking."
+  },
+  "chooseService": "Choose the service you need",
+  "@chooseService": {
+    "description": "Phase 5: directory and booking."
+  },
+  "totalPrice": "Total {amount}",
+  "@totalPrice": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "prescriptionNeeded": "Prescription needed",
+  "@prescriptionNeeded": {
+    "description": "Phase 5: directory and booking."
+  },
+  "durationMinutes": "About {minutes} min",
+  "@durationMinutes": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "durationHours": "About {hours} h",
+  "@durationHours": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "bookingAt": "For {place}",
+  "@bookingAt": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "noServices": "No services are available right now.",
+  "@noServices": {
+    "description": "Phase 5: directory and booking."
+  },
+  "chooseBookingType": "What would you like to book?",
+  "@chooseBookingType": {
+    "description": "Phase 5: directory and booking."
+  },
+  "visitDetailsTitle": "Visit details",
+  "@visitDetailsTitle": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalLabel": "Hospital",
+  "@hospitalLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalOptionalLabel": "Hospital or pharmacy (optional)",
+  "@hospitalOptionalLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "chooseHospital": "Choose the hospital",
+  "@chooseHospital": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalNotListed": "My hospital isn't listed",
+  "@hospitalNotListed": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalTextLabel": "Hospital name and area",
+  "@hospitalTextLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalTextHint": "e.g. City Care Hospital, Patia",
+  "@hospitalTextHint": {
+    "description": "Phase 5: directory and booking."
+  },
+  "doctorLabel": "Doctor",
+  "@doctorLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "doctorNotSure": "Not sure",
+  "@doctorNotSure": {
+    "description": "Phase 5: directory and booking."
+  },
+  "dateLabel": "Date",
+  "@dateLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Phase 5: directory and booking."
+  },
+  "tomorrow": "Tomorrow",
+  "@tomorrow": {
+    "description": "Phase 5: directory and booking."
+  },
+  "pickADate": "Pick a date",
+  "@pickADate": {
+    "description": "Phase 5: directory and booking."
+  },
+  "appointmentTimeLabel": "Doctor appointment time",
+  "@appointmentTimeLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "appointmentTimeHint": "Tap to set (optional)",
+  "@appointmentTimeHint": {
+    "description": "Phase 5: directory and booking."
+  },
+  "pickupTimeLabel": "Pickup time",
+  "@pickupTimeLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "visitTimeLabel": "Visit time",
+  "@visitTimeLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "startTimeLabel": "Start time",
+  "@startTimeLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "pickupSuggested": "Pickup suggested {minutes} min before the appointment. You can change it.",
+  "@pickupSuggested": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "noTimesLeft": "No times left on this date. Please pick another date.",
+  "@noTimesLeft": {
+    "description": "Phase 5: directory and booking."
+  },
+  "timesInIst": "Times are India time (IST).",
+  "@timesInIst": {
+    "description": "Phase 5: directory and booking."
+  },
+  "notesLabel": "Notes (optional)",
+  "@notesLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "notesHint": "Wheelchair, language, gate number…",
+  "@notesHint": {
+    "description": "Phase 5: directory and booking."
+  },
+  "nextLabel": "Next",
+  "@nextLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "chooseMemberRequired": "Choose who the booking is for.",
+  "@chooseMemberRequired": {
+    "description": "Phase 5: directory and booking."
+  },
+  "hospitalRequired": "Choose the hospital or type it in.",
+  "@hospitalRequired": {
+    "description": "Phase 5: directory and booking."
+  },
+  "timeRequired": "Choose a time.",
+  "@timeRequired": {
+    "description": "Phase 5: directory and booking."
+  },
+  "appointmentAfterPickup": "The appointment must be after the pickup time.",
+  "@appointmentAfterPickup": {
+    "description": "Phase 5: directory and booking."
+  },
+  "addressStepTitle": "Address",
+  "@addressStepTitle": {
+    "description": "Phase 5: directory and booking."
+  },
+  "pickupAddressHelp": "Where the companion picks them up.",
+  "@pickupAddressHelp": {
+    "description": "Phase 5: directory and booking."
+  },
+  "homeVisitAddressHelp": "Where the visit takes place.",
+  "@homeVisitAddressHelp": {
+    "description": "Phase 5: directory and booking."
+  },
+  "errandAddressHelp": "Where the companion brings things back to.",
+  "@errandAddressHelp": {
+    "description": "Phase 5: directory and booking."
+  },
+  "addressesOfName": "{name}'s addresses",
+  "@addressesOfName": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "otherAddresses": "Other saved addresses",
+  "@otherAddresses": {
+    "description": "Phase 5: directory and booking."
+  },
+  "addressRequiredToBook": "Choose an address.",
+  "@addressRequiredToBook": {
+    "description": "Phase 5: directory and booking."
+  },
+  "attachDocumentsTitle": "Attach documents",
+  "@attachDocumentsTitle": {
+    "description": "Phase 5: directory and booking."
+  },
+  "attachDocumentsHelp": "Tick the reports or prescriptions to take along. Only the assigned partner sees them.",
+  "@attachDocumentsHelp": {
+    "description": "Phase 5: directory and booking."
+  },
+  "prescriptionRequiredHelp": "This service needs a prescription.",
+  "@prescriptionRequiredHelp": {
+    "description": "Phase 5: directory and booking."
+  },
+  "attachPrescription": "Please attach a prescription.",
+  "@attachPrescription": {
+    "description": "Phase 5: directory and booking."
+  },
+  "noDocumentsForName": "{name} has no documents yet.",
+  "@noDocumentsForName": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewTitle": "Review and pay",
+  "@reviewTitle": {
+    "description": "Phase 5: directory and booking."
+  },
+  "serviceLabel": "Service",
+  "@serviceLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "whenLabel": "When",
+  "@whenLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "whereLabel": "Where",
+  "@whereLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "documentsLabel": "Documents",
+  "@documentsLabel": {
+    "description": "Phase 5: directory and booking."
+  },
+  "documentsCount": "{count, plural, =0{None} =1{1 document} other{{count} documents}}",
+  "@documentsCount": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "priceTotal": "Total",
+  "@priceTotal": {
+    "description": "Phase 5: directory and booking."
+  },
+  "payNowFee": "Pay now (booking fee)",
+  "@payNowFee": {
+    "description": "Phase 5: directory and booking."
+  },
+  "payCompanionAfter": "Pay your companion after the visit",
+  "@payCompanionAfter": {
+    "description": "Phase 5: directory and booking."
+  },
+  "payNurseAfter": "Pay your nurse after the visit",
+  "@payNurseAfter": {
+    "description": "Phase 5: directory and booking."
+  },
+  "extrasNote": "Cab or auto fares and any extra time are settled directly with your partner.",
+  "@extrasNote": {
+    "description": "Phase 5: directory and booking."
+  },
+  "paidInFullNote": "Paid in full in the app: nothing to pay your companion or nurse after the visit.",
+  "@paidInFullNote": {
+    "description": "Patient price box when the booking fee is the whole price (balance 0)."
+  },
+  "cancellationRule": "Cancel before your partner is on the way and get {percent}% of the booking fee back.",
+  "@cancellationRule": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "payAmount": "Pay {amount}",
+  "@payAmount": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "errTimeNotAvailable": "This time is no longer available. Please pick another time.",
+  "@errTimeNotAvailable": {
+    "description": "Phase 5: directory and booking."
+  },
+  "errPrescriptionRequired": "This service needs a prescription. Please attach one.",
+  "@errPrescriptionRequired": {
+    "description": "Phase 5: directory and booking."
+  },
+  "errOutsideServiceArea": "We don't serve this address yet. Please choose another address.",
+  "@errOutsideServiceArea": {
+    "description": "Phase 5: directory and booking."
+  },
+  "errTooManyUnpaid": "You have several bookings waiting for payment. Please try again later.",
+  "@errTooManyUnpaid": {
+    "description": "Phase 5: directory and booking."
+  },
+  "errTooManyRequests": "Too many changes in a minute. Please wait a moment and try again.",
+  "@errTooManyRequests": {
+    "description": "Phase 9.3: the server's limit on changes per minute (429 TOO_MANY_REQUESTS)."
+  },
+  "errInvalidBooking": "Please check the booking details.",
+  "@errInvalidBooking": {
+    "description": "Phase 5: directory and booking."
+  },
+  "errMemberHasBookings": "This person has a booking that isn't finished. Cancel it first.",
+  "@errMemberHasBookings": {
+    "description": "Phase 5: directory and booking."
+  },
+  "errActiveBookings": "You have a booking that isn't finished. Cancel it or wait until it's done.",
+  "@errActiveBookings": {
+    "description": "Phase 5: directory and booking."
+  },
+  "bookingSavedTitle": "Booking saved",
+  "@bookingSavedTitle": {
+    "description": "Phase 5: directory and booking."
+  },
+  "bookingSavedBody": "Online payment isn't available right now. Your booking {code} is saved and waits for payment.",
+  "@bookingSavedBody": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "backToHome": "Back to Home",
+  "@backToHome": {
+    "description": "Phase 5: directory and booking."
+  },
+  "bookingCode": "Booking {code}",
+  "@bookingCode": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "nextBooking": "Next booking",
+  "@nextBooking": {
+    "description": "Phase 5: directory and booking."
+  },
+  "statusPendingPayment": "Waiting for payment",
+  "@statusPendingPayment": {
+    "description": "Phase 5: directory and booking."
+  },
+  "statusAssigning": "Booked. We're assigning your partner.",
+  "@statusAssigning": {
+    "description": "Phase 5: directory and booking."
+  },
+  "statusAssigned": "Partner assigned",
+  "@statusAssigned": {
+    "description": "Phase 5: directory and booking."
+  },
+  "statusInProgress": "In progress",
+  "@statusInProgress": {
+    "description": "Phase 5: directory and booking."
+  },
+  "statusCompleted": "Completed",
+  "@statusCompleted": {
+    "description": "Phase 5: directory and booking."
+  },
+  "statusNoShow": "Patient not available",
+  "@statusNoShow": {
+    "description": "Phase 5: directory and booking."
+  },
+  "statusCancelled": "Cancelled",
+  "@statusCancelled": {
+    "description": "Phase 5: directory and booking."
+  },
+  "statusExpired": "Not paid in time",
+  "@statusExpired": {
+    "description": "Phase 5: directory and booking."
+  },
+  "payBy": "Pay by {time}",
+  "@payBy": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentAt": "Appointment {time}",
+  "@appointmentAt": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "pickupAt": "Pickup {time}",
+  "@pickupAt": {
+    "description": "Phase 5: directory and booking.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "timelineTitle": "Timeline",
+  "@timelineTitle": {
+    "description": "Phase 5: directory and booking."
+  },
+  "eventCreate": "Booking made",
+  "@eventCreate": {
+    "description": "Phase 5: directory and booking."
+  },
+  "documentRemoved": "Document removed",
+  "@documentRemoved": {
+    "description": "Phase 5: directory and booking."
+  },
+  "notesTitle": "Notes",
+  "@notesTitle": {
+    "description": "Phase 5: directory and booking."
+  },
+  "yourAddresses": "Your addresses",
+  "@yourAddresses": {
+    "description": "Phase 5: directory and booking."
+  },
+  "youHaveNoDocuments": "You have no documents yet.",
+  "@youHaveNoDocuments": {
+    "description": "Phase 5: directory and booking."
+  },
+  "appointmentTooEarly": "No pickup time fits before this appointment. Pick a later appointment or another date.",
+  "@appointmentTooEarly": {
+    "description": "Phase 5: directory and booking."
+  },
+  "pickupTooEarly": "The pickup is too early for this appointment. Pick a later pickup time.",
+  "@pickupTooEarly": {
+    "description": "Phase 5: directory and booking."
+  },
+  "errBookingChanged": "This booking was changed. Please check it and tap Pay again.",
+  "@errBookingChanged": {
+    "description": "Phase 5: directory and booking."
+  },
+  "paymentProcessingTitle": "Confirming your payment…",
+  "@paymentProcessingTitle": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "paymentProcessingBody": "This takes a few seconds. You can leave this screen: we'll send you a message.",
+  "@paymentProcessingBody": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "paymentTakingLong": "We're still confirming your payment. We'll send you a message as soon as it's done.",
+  "@paymentTakingLong": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "paymentConfirmedTitle": "Booking confirmed",
+  "@paymentConfirmedTitle": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "paymentConfirmedBody": "We're assigning your partner. Their name, photo and phone appear here once they accept.",
+  "@paymentConfirmedBody": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "paymentFailedTitle": "Payment didn't go through",
+  "@paymentFailedTitle": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "paymentFailedBody": "If money was taken, it is confirmed or returned automatically. You can try again until {time}.",
+  "@paymentFailedBody": {
+    "description": "Phase 6: payment, cancel, reschedule.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentCancelledTitle": "Payment cancelled",
+  "@paymentCancelledTitle": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "viewBooking": "View booking",
+  "@viewBooking": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "paidAmount": "Paid {amount}",
+  "@paidAmount": {
+    "description": "Phase 6: payment, cancel, reschedule.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "tabUpcoming": "Upcoming",
+  "@tabUpcoming": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "tabOngoing": "Ongoing",
+  "@tabOngoing": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "tabPast": "Past",
+  "@tabPast": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "noUpcomingBookings": "No upcoming bookings.",
+  "@noUpcomingBookings": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "noOngoingBookings": "Nothing in progress right now.",
+  "@noOngoingBookings": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "noPastBookings": "No past bookings yet.",
+  "@noPastBookings": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelBooking": "Cancel booking",
+  "@cancelBooking": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelTitle": "Cancel this booking?",
+  "@cancelTitle": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelRefund": "You'll get back {amount} ({percent}% of the booking fee) to your payment method in 5 to 7 working days.",
+  "@cancelRefund": {
+    "description": "Phase 6: payment, cancel, reschedule.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "cancelNoRefund": "No refund applies to this booking.",
+  "@cancelNoRefund": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelReasonLabel": "Why are you cancelling?",
+  "@cancelReasonLabel": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelReasonPlans": "Plans changed",
+  "@cancelReasonPlans": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelReasonMistake": "Booked by mistake",
+  "@cancelReasonMistake": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelReasonOther": "Another reason",
+  "@cancelReasonOther": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelReasonHint": "Tell us more (optional)",
+  "@cancelReasonHint": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "confirmCancel": "Yes, cancel",
+  "@confirmCancel": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "keepBooking": "Keep booking",
+  "@keepBooking": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "cancelNotAllowed": "Your partner is already on the way. Please call WellWish support to cancel.",
+  "@cancelNotAllowed": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "bookingCancelledSnack": "Booking cancelled.",
+  "@bookingCancelledSnack": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "refundsTitle": "Refunds",
+  "@refundsTitle": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "refundAwaiting": "Being approved",
+  "@refundAwaiting": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "refundPending": "On its way",
+  "@refundPending": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "refundProcessed": "Refunded",
+  "@refundProcessed": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "refundFailed": "Failed: support will call you",
+  "@refundFailed": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "refundRejected": "Not approved",
+  "@refundRejected": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "changeTime": "Change date or time",
+  "@changeTime": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "reschedulesLeft": "{count, plural, =0{No changes left} =1{1 change left} other{{count} changes left}}",
+  "@reschedulesLeft": {
+    "description": "Phase 6: payment, cancel, reschedule.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rescheduleTooLate": "It's too close to the pickup to change the time. Please call WellWish support.",
+  "@rescheduleTooLate": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "rescheduleLimit": "The time can't be changed again. Please call WellWish support.",
+  "@rescheduleLimit": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "confirmNewTime": "Confirm new time",
+  "@confirmNewTime": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "timeChangedSnack": "Time changed.",
+  "@timeChangedSnack": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "partnerWillReconfirm": "Your partner will confirm the new time.",
+  "@partnerWillReconfirm": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "currentTime": "Now: {time}",
+  "@currentTime": {
+    "description": "Phase 6: payment, cancel, reschedule.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "errNotPayable": "This booking can't be paid any more. Please book again.",
+  "@errNotPayable": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "errPaymentsNotSetUp": "Online payment isn't available right now. Please try again later.",
+  "@errPaymentsNotSetUp": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "errInvalidSignature": "We couldn't confirm this payment. If money was taken, it will be confirmed or refunded.",
+  "@errInvalidSignature": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "errGateway": "The payment service didn't answer. Please try again.",
+  "@errGateway": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "rescheduleNotAllowed": "The time can't be changed in the app any more. Please call WellWish support.",
+  "@rescheduleNotAllowed": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "eventPaid": "Booking fee paid",
+  "@eventPaid": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "eventRescheduled": "Date or time changed",
+  "@eventRescheduled": {
+    "description": "Phase 6: payment, cancel, reschedule."
+  },
+  "bookingFeeOnline": "Booking fee (online)",
+  "@bookingFeeOnline": {
+    "description": "Phase 6: the fee line on a booking that is no longer unpaid."
+  },
+  "paymentNotBookedTitle": "Booking not made",
+  "@paymentNotBookedTitle": {
+    "description": "Phase 6: paid too late, the money goes back."
+  },
+  "paymentNotBookedBody": "The payment time ran out, or the time was taken while you paid. Your money is returned in full in 5 to 7 working days. Please book again.",
+  "@paymentNotBookedBody": {
+    "description": "Phase 6: paid too late, the money goes back."
+  },
+  "offersTitle": "New offers",
+  "@offersTitle": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerTimeLeft": "{time} left to answer",
+  "@offerTimeLeft": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "offerWaiting": "Please answer: WellWish is waiting",
+  "@offerWaiting": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerReconfirm": "Time changed: please confirm",
+  "@offerReconfirm": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "todayJobsTitle": "Today's jobs",
+  "@todayJobsTitle": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "noJobsToday": "No jobs today.",
+  "@noJobsToday": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "totalsDoneToday": "Done today",
+  "@totalsDoneToday": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "totalsThisWeek": "This week",
+  "@totalsThisWeek": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "totalsUpcoming": "Upcoming",
+  "@totalsUpcoming": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "selfieTitle": "Today's selfie",
+  "@selfieTitle": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "selfieBody": "Take a quick selfie before you go available. WellWish checks it against your profile photo.",
+  "@selfieBody": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "takeSelfie": "Take selfie",
+  "@takeSelfie": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "selfieSaved": "Selfie saved. You're available today.",
+  "@selfieSaved": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "selfieNeeded": "Take today's selfie first.",
+  "@selfieNeeded": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerTitle": "Booking offer",
+  "@offerTitle": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerArea": "Area",
+  "@offerArea": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerDistance": "{km} km from your home",
+  "@offerDistance": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "offerPatient": "Patient",
+  "@offerPatient": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerNeeds": "Needs",
+  "@offerNeeds": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerDocuments": "{count, plural, =0{No documents} =1{1 document attached} other{{count} documents attached}}",
+  "@offerDocuments": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "offerPrescription": "Prescription attached",
+  "@offerPrescription": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerBalance": "You collect {amount} after the job",
+  "@offerBalance": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "offerDetailsLater": "The full address, phone numbers, health notes and documents open after you accept.",
+  "@offerDetailsLater": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "acceptOffer": "Accept",
+  "@acceptOffer": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "acceptNewTime": "Confirm new time",
+  "@acceptNewTime": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "declineOffer": "Decline",
+  "@declineOffer": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "declineTitle": "Why can't you take it?",
+  "@declineTitle": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "declineNotAvailable": "Not available",
+  "@declineNotAvailable": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "declineTooFar": "Too far",
+  "@declineTooFar": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "declineOther": "Other reason",
+  "@declineOther": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "declineNoteHint": "Add a note (optional)",
+  "@declineNoteHint": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerDeclined": "Declined. WellWish will find someone else.",
+  "@offerDeclined": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "errOfferNotOpen": "This booking is no longer yours.",
+  "@errOfferNotOpen": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "errPartnerBusy": "You have another job at that time.",
+  "@errPartnerBusy": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "jobsNew": "New",
+  "@jobsNew": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "jobsUpcoming": "Upcoming",
+  "@jobsUpcoming": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "jobsCompleted": "Completed",
+  "@jobsCompleted": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "noOffers": "No new offers.",
+  "@noOffers": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "noUpcomingJobs": "No upcoming jobs.",
+  "@noUpcomingJobs": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "noCompletedJobs": "No completed jobs yet.",
+  "@noCompletedJobs": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "jobTitle": "Job {code}",
+  "@jobTitle": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "jobAddress": "Address",
+  "@jobAddress": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "navigate": "Navigate",
+  "@navigate": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "navigateHospital": "Navigate to the hospital",
+  "@navigateHospital": {
+    "description": "Partner job: opens Google Maps to the hospital (after picking up the patient)."
+  },
+  "callPatient": "Call the patient",
+  "@callPatient": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "callBooker": "Call {name} (who booked)",
+  "@callBooker": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "collectBalance": "Collect {amount} after the job",
+  "@collectBalance": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "jobAccepted": "Accepted",
+  "@jobAccepted": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "reconfirmPending": "The time changed. Confirm the new time under New offers.",
+  "@reconfirmPending": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "openDocument": "Open",
+  "@openDocument": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "yourPartner": "Your partner",
+  "@yourPartner": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "callName": "Call {name}",
+  "@callName": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ratingCount": "{rating} ({count, plural, =1{1 review} other{{count} reviews}})",
+  "@ratingCount": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner).",
+    "placeholders": {
+      "rating": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "newPartner": "New partner",
+  "@newPartner": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "offerAccepted": "This job is yours.",
+  "@offerAccepted": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "openJob": "Open the job",
+  "@openJob": {
+    "description": "Phase 7: assignment (partner offers and jobs, patient's partner)."
+  },
+  "stepOnTheWay": "On the way",
+  "@stepOnTheWay": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepReachedPatient": "Reached the patient",
+  "@stepReachedPatient": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepPickedUp": "Picked up",
+  "@stepPickedUp": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepReachedHospital": "At the hospital",
+  "@stepReachedHospital": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepVisitDone": "Visit done",
+  "@stepVisitDone": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepDroppedHome": "Dropped home",
+  "@stepDroppedHome": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepReachedHome": "Reached home",
+  "@stepReachedHome": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepStarted": "Care started",
+  "@stepStarted": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepCareDone": "Care done",
+  "@stepCareDone": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepAtPlace": "At the hospital / pharmacy",
+  "@stepAtPlace": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepTaskDone": "Task done",
+  "@stepTaskDone": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepDelivered": "Delivered",
+  "@stepDelivered": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepCompleted": "Completed",
+  "@stepCompleted": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "activeJobTitle": "Your job now",
+  "@activeJobTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "nextStepIs": "Next: {step}",
+  "@nextStepIs": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "step": {
+        "type": "String"
+      }
+    }
+  },
+  "tapWhenDone": "Tap when this is done",
+  "@tapWhenDone": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "sharingLocation": "Sharing your location with the patient",
+  "@sharingLocation": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "locationOffHelp": "Can't read your location. Allow location for WellWish Partner and turn on Location.",
+  "@locationOffHelp": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "fgsTitle": "WellWish visit",
+  "@fgsTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "fgsText": "Sharing your location with the patient for this visit",
+  "@fgsText": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "enterOtpTitle": "Ask for the visit code",
+  "@enterOtpTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "enterOtpBody": "The family has a 4-digit code in the WellWish app or SMS.",
+  "@enterOtpBody": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "jobOtpWrong": "Wrong code. {tries} tries left.",
+  "@jobOtpWrong": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "tries": {
+        "type": "int"
+      }
+    }
+  },
+  "otpWaitUntil": "Too many wrong codes. Try again at {time}, or call WellWish: they can confirm with the family.",
+  "@otpWaitUntil": {
+    "description": "Partner: after 4 wrong visit codes, a wait before the next try (5, 10, 20 min...).",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "jobOtpLastTry": "Wrong code. One more wrong code and you'll have to wait 5 minutes.",
+  "@jobOtpLastTry": {
+    "description": "Partner: 3rd wrong visit code (the 4th starts a wait)."
+  },
+  "noNetworkOtp": "No network. Call WellWish to confirm the code.",
+  "@noNetworkOtp": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "stepQueued": "Saved on your phone. It'll be sent when you're back online.",
+  "@stepQueued": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "pendingSteps": "Waiting for network: {count, plural, =1{1 step} other{{count} steps}} to send",
+  "@pendingSteps": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "stepsRefused": "A step saved on your phone wasn't accepted (WellWish may have marked it already). Check the steps below, or call WellWish.",
+  "@stepsRefused": {
+    "description": "Active job: a step kept offline was refused by the server when sent."
+  },
+  "tooEarlyToStart": "Too early to start. You can tap \"On the way\" from {time}.",
+  "@tooEarlyToStart": {
+    "description": "Partner tapped On the way more than 2 hours before pickup.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "shareAgain": "Try sharing again",
+  "@shareAgain": {
+    "description": "Active job: restart location sharing after fixing the location setting."
+  },
+  "callWellWish": "Call WellWish",
+  "@callWellWish": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "waitTimer": "Waiting for the patient: {time} left",
+  "@waitTimer": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "patientNotAvailable": "Patient not available",
+  "@patientNotAvailable": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "noShowConfirm": "Mark the patient as not available? WellWish will review it.",
+  "@noShowConfirm": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "callFirst": "Try calling the patient first.",
+  "@callFirst": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "noShowDone": "Marked: patient not available. WellWish will review it.",
+  "@noShowDone": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "jobFinished": "Job completed. Thank you!",
+  "@jobFinished": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "sos": "SOS",
+  "@sos": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "sosTitle": "Emergency",
+  "@sosTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "sosBody": "WellWish and the emergency contacts get an alert with your location. For police call 112, for an ambulance 108.",
+  "@sosBody": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "sendSos": "Send SOS to WellWish",
+  "@sendSos": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "sosSent": "WellWish has been alerted.",
+  "@sosSent": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "call112": "Call 112 (police)",
+  "@call112": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "call108": "Call 108 (ambulance)",
+  "@call108": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "careNoteTitle": "Care note",
+  "@careNoteTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "careNoteHint": "What you did and how the patient is",
+  "@careNoteHint": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "careNoteRequired": "Please write a short care note.",
+  "@careNoteRequired": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "vitalsTitle": "Vitals (optional)",
+  "@vitalsTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "bpLabel": "BP (e.g. 120/80)",
+  "@bpLabel": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "pulseLabel": "Pulse",
+  "@pulseLabel": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "temperatureLabel": "Temperature (°F)",
+  "@temperatureLabel": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "spo2Label": "SpO₂ (%)",
+  "@spo2Label": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "sugarLabel": "Sugar (mg/dL)",
+  "@sugarLabel": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "saveCareNote": "Save and mark Care done",
+  "@saveCareNote": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "invalidValue": "Check this value",
+  "@invalidValue": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "collectTitle": "Collect balance",
+  "@collectTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "collectBody": "Record what you collected. WellWish doesn't handle this money.",
+  "@collectBody": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "amountRupees": "Amount (₹)",
+  "@amountRupees": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "payCash": "Cash",
+  "@payCash": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "payUpi": "UPI",
+  "@payUpi": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "balanceNoteHint": "Note (optional)",
+  "@balanceNoteHint": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "recordBalance": "Record balance",
+  "@recordBalance": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "balanceRecorded": "Collected {amount} ({mode})",
+  "@balanceRecorded": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "balanceNotDue": "Nothing to collect: the family paid the full price in the app.",
+  "@balanceNotDue": {
+    "description": "Collect balance refused (BALANCE_NOT_DUE): the booking has no balance."
+  },
+  "balanceTooHigh": "That's more than the balance to collect ({amount}).",
+  "@balanceTooHigh": {
+    "description": "Collect balance refused (BALANCE_TOO_HIGH); amount is the balance due.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "totalsTitle": "Totals",
+  "@totalsTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "jobsDoneTitle": "Jobs done",
+  "@jobsDoneTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "totalsThisMonth": "This month",
+  "@totalsThisMonth": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "totalsAllTime": "All time",
+  "@totalsAllTime": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "balanceCollectedTitle": "Balance collected",
+  "@balanceCollectedTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "cashUpi": "Cash {cash} · UPI {upi}",
+  "@cashUpi": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "cash": {
+        "type": "String"
+      },
+      "upi": {
+        "type": "String"
+      }
+    }
+  },
+  "offersTitleTotals": "Offers",
+  "@offersTitleTotals": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "offersLine": "{received} received · {accepted} accepted · {declined} declined · {late} not answered in 2 min",
+  "@offersLine": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "received": {
+        "type": "int"
+      },
+      "accepted": {
+        "type": "int"
+      },
+      "declined": {
+        "type": "int"
+      },
+      "late": {
+        "type": "int"
+      }
+    }
+  },
+  "ratingTitle": "Rating",
+  "@ratingTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "noReviewsYet": "No reviews yet",
+  "@noReviewsYet": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "seeTotals": "See totals",
+  "@seeTotals": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "visitCodeTitle": "Visit code",
+  "@visitCodeTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "visitCodeHelp": "Give this code to {name} when they arrive. Don't share it on the phone.",
+  "@visitCodeHelp": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "trackLive": "Track live",
+  "@trackLive": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "liveEnded": "The visit is over. Live location has stopped.",
+  "@liveEnded": {
+    "description": "Patient live tracking: shown once the job is completed or ended."
+  },
+  "backToBooking": "Back to the booking",
+  "@backToBooking": {
+    "description": "Button on the live screen after the visit ended."
+  },
+  "nowStep": "Now: {step}",
+  "@nowStep": {
+    "description": "Patient: the partner's current step, e.g. 'Now: On the way'.",
+    "placeholders": {
+      "step": {
+        "type": "String"
+      }
+    }
+  },
+  "chooseStars": "Choose 1 to 5 stars",
+  "@chooseStars": {
+    "description": "Rating: no stars chosen yet."
+  },
+  "starsSemantics": "{count} stars",
+  "@starsSemantics": {
+    "description": "Screen reader label of a rating star button.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reportTooShort": "Please write a few words",
+  "@reportTooShort": {
+    "description": "Report a problem: the text is too short (under 5 letters)."
+  },
+  "sendReport": "Send",
+  "@sendReport": {
+    "description": "Report a problem: send button."
+  },
+  "errAlreadyReviewed": "You've already rated this visit.",
+  "@errAlreadyReviewed": {
+    "description": "Error ALREADY_REVIEWED."
+  },
+  "errNotReviewable": "This visit can't be rated.",
+  "@errNotReviewable": {
+    "description": "Error NOT_REVIEWABLE."
+  },
+  "errReportTooLate": "Problems can be reported up to 24 hours after the visit. Please call WellWish.",
+  "@errReportTooLate": {
+    "description": "Error REPORT_TOO_LATE."
+  },
+  "errNotInProgress": "The visit isn't in progress. For an emergency call 112.",
+  "@errNotInProgress": {
+    "description": "Error NOT_IN_PROGRESS (SOS outside a visit)."
+  },
+  "liveTitle": "Live visit",
+  "@liveTitle": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "etaMinutes": "About {minutes} min away",
+  "@etaMinutes": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "etaHours": "About {hours} h {minutes} min away",
+  "@etaHours": {
+    "description": "Patient live map ETA of an hour or more.",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "updatedAt": "Updated {time}",
+  "@updatedAt": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "waitingForLocation": "Waiting for {name}'s location…",
+  "@waitingForLocation": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shareTrip": "Share trip",
+  "@shareTrip": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "linkCopied": "Link copied. Send it on WhatsApp or SMS.",
+  "@linkCopied": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "visitCompleted": "Visit completed",
+  "@visitCompleted": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "payPartner": "Pay {amount} to {name}",
+  "@payPartner": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "payPartnerHelp": "Pay the balance directly to your companion or nurse (cash or UPI). Cab fares and extra time are settled with them.",
+  "@payPartnerHelp": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "rateVisit": "Rate the visit",
+  "@rateVisit": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "reviewCommentHint": "Anything to add? (optional)",
+  "@reviewCommentHint": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "sendRating": "Send rating",
+  "@sendRating": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "ratingThanks": "Thanks for rating!",
+  "@ratingThanks": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "yourRating": "Your rating",
+  "@yourRating": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "tagOnTime": "On time",
+  "@tagOnTime": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "tagKind": "Kind",
+  "@tagKind": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "tagHelpful": "Helpful",
+  "@tagHelpful": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "tagProfessional": "Professional",
+  "@tagProfessional": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "tagGoodCommunication": "Explained well",
+  "@tagGoodCommunication": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "tagLate": "Late",
+  "@tagLate": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "tagRude": "Rude",
+  "@tagRude": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "tagUnhelpful": "Not helpful",
+  "@tagUnhelpful": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "reportProblem": "Report a problem",
+  "@reportProblem": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "reportHint": "What went wrong?",
+  "@reportHint": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "reportSent": "Sent. WellWish will get back to you.",
+  "@reportSent": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "reportedProblems": "Problems you reported",
+  "@reportedProblems": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "wellwishReplied": "WellWish replied",
+  "@wellwishReplied": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "ticketClosed": "Closed",
+  "@ticketClosed": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "ticketOpen": "Open",
+  "@ticketOpen": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "noShowShown": "{name} couldn't meet the patient. WellWish will call you.",
+  "@noShowShown": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating).",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "docTypeCareNote": "Care note",
+  "@docTypeCareNote": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "vitalsLine": "Vitals",
+  "@vitalsLine": {
+    "description": "Phase 8: the visit (job steps, live location, SOS, care note, balance, rating)."
+  },
+  "bpShort": "BP",
+  "@bpShort": {
+    "description": "Blood pressure, short (care note vitals in the patient's documents)."
+  },
+  "careNoteBy": "Written by the nurse at the visit",
+  "@careNoteBy": {
+    "description": "Under a care note in the patient's documents."
+  },
+  "tempHomeTitle": "Your WellWish job",
+  "@tempHomeTitle": {
+    "description": "Phase 8B: a temporary partner's home (§6.19), which shows only their one job."
+  },
+  "tempHomeBody": "WellWish asked you to do this one visit. Follow the steps below, one at a time.",
+  "@tempHomeBody": {
+    "description": "Phase 8B: under the title of a temporary partner's home (§6.19)."
+  },
+  "tempSelfieBody": "Take a selfie before you start. The family and WellWish see it as your photo for this visit.",
+  "@tempSelfieBody": {
+    "description": "Phase 8B: a temporary partner's selfie before \"On the way\" (§6.19)."
+  },
+  "tempSelfieSaved": "Selfie saved. You can start the job now.",
+  "@tempSelfieSaved": {
+    "description": "Phase 8B: after a temporary partner's selfie (§6.19)."
+  },
+  "tempJobOver": "Your WellWish job is over. Thank you!",
+  "@tempJobOver": {
+    "description": "Phase 8B: on the login screen when a temporary partner's access ended with their job (§6.19, revoke reason JOB_OVER)."
+  },
+  "rootedWarning": "This phone looks rooted. Patients' details and your account are less safe on it. Please use a phone that isn't rooted for WellWish jobs.",
+  "@rootedWarning": {
+    "description": "Phase 9.3: Partner app Home, when the phone looks rooted (§12). A warning only; the partner can still work."
+  },
+  "otpFieldLabel": "The 6-digit code",
+  "@otpFieldLabel": {
+    "description": "Phase 9.8: what TalkBack says for the code boxes on the login and contact-check screens."
+  },
+  "paidPartner": "Paid {amount} to {name}",
+  "@paidPartner": {
+    "description": "Phase 9.11: P20 after the partner recorded the balance they collected (instead of 'Pay {amount} to {name}').",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "legalTitle": "Terms and policies",
+  "@legalTitle": {
+    "description": "Phase 9B: settings card with the legal pages (§6.20)."
+  },
+  "legalTerms": "Terms of Use",
+  "@legalTerms": {
+    "description": "Phase 9B: a legal page's name."
+  },
+  "legalPrivacy": "Privacy Policy",
+  "@legalPrivacy": {
+    "description": "Phase 9B: a legal page's name."
+  },
+  "legalRefunds": "Refund Policy",
+  "@legalRefunds": {
+    "description": "Phase 9B: a legal page's name."
+  },
+  "legalPartnerTerms": "Partner Terms",
+  "@legalPartnerTerms": {
+    "description": "Phase 9B: a legal page's name (partner app)."
+  },
+  "legalRead": "Read the {page}",
+  "@legalRead": {
+    "description": "Phase 9B: link under a consent line that opens the page in the browser.",
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "consentPartnerTerms": "I accept the Partner Terms",
+  "@consentPartnerTerms": {
+    "description": "Phase 9B: partner app consent line (§6.20)."
+  },
+  "consentPartnerTermsDetail": "How jobs, location sharing, conduct and your account work.",
+  "@consentPartnerTermsDetail": {
+    "description": "Phase 9B: under the Partner Terms consent line."
+  },
+  "partnerDeleteAccountHelp": "Removes your profile, phone numbers, email and documents.",
+  "@partnerDeleteAccountHelp": {
+    "description": "Phase 9B: under 'Delete my account' in the partner app."
+  },
+  "partnerDeleteAccountBody": "You will be logged out now. Your profile, phone numbers, email, address and documents are deleted after {days} days. Log in again before then to keep your account. Your past jobs stay on record without your personal details.",
+  "@partnerDeleteAccountBody": {
+    "description": "Phase 9B: confirm dialog before a partner deletes their account (§6.20).",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "errorActiveJobs": "You have an accepted or ongoing job. Ask WellWish to move it, then try again.",
+  "@errorActiveJobs": {
+    "description": "Phase 9B: 409 ACTIVE_JOBS when a partner deletes their account."
+  },
+  "accountErased": "Your account is deleted.",
+  "@accountErased": {
+    "description": "Phase 9B: login screen after deleting a partner login with nothing saved (deleted at once)."
+  },
+  "deleteLoginBody": "Nothing else is saved for this number in the Partner app. It is deleted now and you are logged out.",
+  "@deleteLoginBody": {
+    "description": "Phase 9B: confirm text for 'Delete my account' before choosing a role (deleted at once)."
+  },
+  "consentChanged": "WellWish just updated these pages. Please read and accept them again.",
+  "@consentChanged": {
+    "description": "Phase 9B: consent screen when a new version was published while it was open."
+  },
+  "errUploadAgain": "The upload took too long. Please try again.",
+  "@errUploadAgain": {
+    "description": "Phase 9B: the signed upload link expired before the file was sent."
+  }
+}

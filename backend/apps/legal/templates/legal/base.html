@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="{{ language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}WellWish{% endblock %} · WellWish</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; font-family: system-ui, "Noto Sans Oriya", "Noto Sans Devanagari", sans-serif;
+    color: #10233f; background: #f4f8ff; line-height: 1.55; font-size: 16px; }
+  .top { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between;
+    padding: 12px 16px; background: #fff; border-bottom: 1px solid #e3e9f3; }
+  .brand { font-weight: 700; font-size: 18px; color: #0a6cdf; }
+  .langs a, .langs span { margin-left: 12px; color: #0a6cdf; text-decoration: none; font-size: 15px; }
+  .langs [aria-current] { color: #10233f; font-weight: 600; }
+  main { max-width: 760px; margin: 0 auto; padding: 16px; }
+  .card { background: #fff; border: 1px solid #e3e9f3; border-radius: 14px; padding: 20px 18px; }
+  h1 { font-size: 24px; margin: 0 0 4px; color: #0a2a55; }
+  h2 { font-size: 18px; margin: 22px 0 6px; color: #0a2a55; }
+  p { margin: 8px 0; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  .muted { color: #5b6b82; font-size: 14px; }
+  .note { background: #fff7e0; border: 1px solid #f2d27a; border-radius: 10px; padding: 10px 12px; font-size: 15px; }
+  .error { background: #fdecec; border: 1px solid #f3b4b4; border-radius: 10px; padding: 10px 12px; }
+  .ok { background: #e8f7ee; border: 1px solid #a8dcb9; border-radius: 10px; padding: 10px 12px; }
+  label { display: block; font-weight: 600; margin: 14px 0 6px; }
+  input[type=tel], input[type=text] { width: 100%; box-sizing: border-box; font-size: 18px; padding: 12px;
+    border: 1px solid #c7d3e6; border-radius: 10px; background: #fff; color: #10233f; }
+  button { font: inherit; font-weight: 600; font-size: 16px; padding: 12px 18px; min-height: 48px;
+    border-radius: 10px; border: 0; background: #0a6cdf; color: #fff; cursor: pointer; margin-top: 14px; }
+  button.danger { background: #c62828; }
+  .account { border: 1px solid #e3e9f3; border-radius: 12px; padding: 14px; margin: 12px 0; }
+  .account h2 { margin-top: 0; }
+  footer { max-width: 760px; margin: 0 auto; padding: 8px 16px 32px; }
+  footer h2 { font-size: 15px; color: #5b6b82; margin: 12px 0 4px; }
+  footer ul { list-style: none; padding: 0; margin: 0; }
+  footer li { display: inline-block; margin: 4px 14px 4px 0; }
+  footer a { color: #0a6cdf; }
+</style>
+</head>
+<body>
+<header class="top">
+  <span class="brand">WellWish</span>
+  <nav class="langs">
+    {% for code, name, href in languages %}{% if code == language %}<span aria-current="true" lang="{{ code }}">{{ name }}</span>{% else %}<a href="{{ href }}" lang="{{ code }}">{{ name }}</a>{% endif %}{% endfor %}
+  </nav>
+</header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer>
+  <h2>{{ texts.other }}</h2>
+  <ul>
+    {% for name, href, here in pages %}<li>{% if here %}<span aria-current="page">{{ name }}</span>{% else %}<a href="{{ href }}">{{ name }}</a>{% endif %}</li>{% endfor %}
+  </ul>
+</footer>
+</body>
+</html>

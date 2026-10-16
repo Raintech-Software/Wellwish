@@ -1,0 +1,145 @@
+{
+  "_about": "CloudWatch alarms for ARCHITECTURE §13 (PHASES 9.5). Created with create_alarms.py once the server exists. ${NAMESPACE} = CLOUDWATCH_NAMESPACE of the backend (e.g. WellWish/production), ${ENV} = production / staging, ${ALB} and ${TARGET_GROUP} = the load balancer's dimension values (app/... and targetgroup/...), ${TOPIC_ARN} = the SNS topic that emails / texts the team. Thresholds are a start: tune them after a few weeks live.",
+  "alarms": [
+    {
+      "AlarmName": "wellwish-${ENV}-api-5xx",
+      "AlarmDescription": "The API answers 5xx (server errors). Look at Sentry and the API logs.",
+      "Namespace": "AWS/ApplicationELB",
+      "MetricName": "HTTPCode_Target_5XX_Count",
+      "Dimensions": [
+        {
+          "Name": "LoadBalancer",
+          "Value": "${ALB}"
+        },
+        {
+          "Name": "TargetGroup",
+          "Value": "${TARGET_GROUP}"
+        }
+      ],
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 5,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-api-p95-latency",
+      "AlarmDescription": "API p95 response time above 300 ms for 15 minutes (the Phase 9.4 target).",
+      "Namespace": "AWS/ApplicationELB",
+      "MetricName": "TargetResponseTime",
+      "Dimensions": [
+        {
+          "Name": "LoadBalancer",
+          "Value": "${ALB}"
+        },
+        {
+          "Name": "TargetGroup",
+          "Value": "${TARGET_GROUP}"
+        }
+      ],
+      "ExtendedStatistic": "p95",
+      "Period": 300,
+      "EvaluationPeriods": 3,
+      "Threshold": 0.3,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-unassigned-over-30-min",
+      "AlarmDescription": "A paid booking has had no partner for 30 minutes. Assign it from the admin panel's Unassigned queue.",
+      "Namespace": "${NAMESPACE}",
+      "MetricName": "UnassignedOver30Min",
+      "Statistic": "Maximum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-offer-timeouts",
+      "AlarmDescription": "Partners are not answering offers within 2 minutes (3 or more in 15 minutes).",
+      "Namespace": "${NAMESPACE}",
+      "MetricName": "OfferTimeouts",
+      "Statistic": "Sum",
+      "Period": 900,
+      "EvaluationPeriods": 1,
+      "Threshold": 3,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-sos-not-acknowledged",
+      "AlarmDescription": "An SOS has not been acknowledged for 2 minutes. Open the admin panel's Live page and call now.",
+      "Namespace": "${NAMESPACE}",
+      "MetricName": "SosUnacknowledged",
+      "Statistic": "Maximum",
+      "Period": 60,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-webhook-failures",
+      "AlarmDescription": "Razorpay webhooks fail while being handled (an error on our side). Payments may not be confirmed: check the API logs and Sentry.",
+      "Namespace": "${NAMESPACE}",
+      "MetricName": "WebhookFailures",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-webhook-bad-signatures",
+      "AlarmDescription": "Many webhooks with a bad signature: the webhook secret in Settings → Payment keys probably doesn't match Razorpay's. (A few stray ones from outside are normal.)",
+      "Namespace": "${NAMESPACE}",
+      "MetricName": "WebhookBadSignatures",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 20,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-sms-failures",
+      "AlarmDescription": "SMS are failing (MSG91 down, credit or DLT template problem). Login codes may not arrive.",
+      "Namespace": "${NAMESPACE}",
+      "MetricName": "SmsFailures",
+      "Statistic": "Sum",
+      "Period": 900,
+      "EvaluationPeriods": 1,
+      "Threshold": 5,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-email-failures",
+      "AlarmDescription": "Emails are failing (SES). Partner email codes and admin emails may not arrive.",
+      "Namespace": "${NAMESPACE}",
+      "MetricName": "EmailFailures",
+      "Statistic": "Sum",
+      "Period": 900,
+      "EvaluationPeriods": 1,
+      "Threshold": 5,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching"
+    },
+    {
+      "AlarmName": "wellwish-${ENV}-metrics-missing",
+      "AlarmDescription": "The backend's minute numbers stopped arriving: the Celery worker or beat is down (or its IAM role lost cloudwatch:PutMetricData). The SOS escalation and every timer are down with it: check the worker and beat now.",
+      "Namespace": "${NAMESPACE}",
+      "MetricName": "SosUnacknowledged",
+      "Statistic": "SampleCount",
+      "Period": 300,
+      "EvaluationPeriods": 2,
+      "Threshold": 1,
+      "ComparisonOperator": "LessThanThreshold",
+      "TreatMissingData": "breaching"
+    }
+  ]
+}

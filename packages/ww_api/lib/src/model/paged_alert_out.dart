@@ -1,0 +1,107 @@
+//
+// AUTO-GENERATED FILE, DO NOT MODIFY!
+//
+
+// ignore_for_file: unused_element
+import 'package:ww_api/src/model/alert_out.dart';
+import 'package:copy_with_extension/copy_with_extension.dart';
+import 'package:json_annotation/json_annotation.dart';
+
+part 'paged_alert_out.g.dart';
+
+
+@CopyWith()
+@JsonSerializable(
+  checked: true,
+  createToJson: true,
+  disallowUnrecognizedKeys: false,
+  explicitToJson: true,
+)
+class PagedAlertOut {
+  /// Returns a new [PagedAlertOut] instance.
+  PagedAlertOut({
+
+    required  this.items,
+
+    required  this.count,
+
+    required  this.page,
+
+    required  this.pageSize,
+  });
+
+  @JsonKey(
+    
+    name: r'items',
+    required: true,
+    includeIfNull: false,
+  )
+
+
+  final List<AlertOut> items;
+
+
+
+  @JsonKey(
+    
+    name: r'count',
+    required: true,
+    includeIfNull: false,
+  )
+
+
+  final int count;
+
+
+
+  @JsonKey(
+    
+    name: r'page',
+    required: true,
+    includeIfNull: false,
+  )
+
+
+  final int page;
+
+
+
+  @JsonKey(
+    
+    name: r'pageSize',
+    required: true,
+    includeIfNull: false,
+  )
+
+
+  final int pageSize;
+
+
+
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is PagedAlertOut &&
+      other.items == items &&
+      other.count == count &&
+      other.page == page &&
+      other.pageSize == pageSize;
+
+    @override
+    int get hashCode =>
+        items.hashCode +
+        count.hashCode +
+        page.hashCode +
+        pageSize.hashCode;
+
+  factory PagedAlertOut.fromJson(Map<String, dynamic> json) => _$PagedAlertOutFromJson(json);
+
+  Map<String, dynamic> toJson() => _$PagedAlertOutToJson(this);
+
+  @override
+  String toString() {
+    return toJson().toString();
+  }
+
+}
+

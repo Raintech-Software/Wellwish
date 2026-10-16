@@ -1,0 +1,56 @@
+{% extends "legal/base.html" %}
+{% block title %}{{ t.title }}{% endblock %}
+{% block content %}
+<section class="card">
+  <h1>{{ t.title }}</h1>
+  <p>{{ t.intro }}</p>
+  {% if message %}<p class="error" role="alert">{{ message }}</p>{% endif %}
+  {% if done %}<p class="ok" role="status">{{ done }}</p>{% endif %}
+
+  {% if step == "phone" %}
+  <form method="post" action="{{ action }}">{% csrf_token %}
+    <input type="hidden" name="step" value="send">
+    <label for="phone">{{ t.phone_label }}</label>
+    <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required value="{{ phone_value|default:'' }}" placeholder="98765 43210">
+    <button type="submit">{{ t.send }}</button>
+  </form>
+
+  {% elif step == "code" %}
+  <form method="post" action="{{ action }}">{% csrf_token %}
+    <input type="hidden" name="step" value="verify">
+    <input type="hidden" name="ticket" value="{{ ticket }}">
+    <label for="code">{{ code_label }}</label>
+    <input id="code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" maxlength="6" required>
+    <button type="submit">{{ t.verify }}</button>
+  </form>
+  <p><a href="{{ action }}">{{ t.other_number }}</a></p>
+
+  {% elif step == "none" %}
+  <p>{{ t.none }}</p>
+  <p><a href="{{ action }}">{{ t.other_number }}</a></p>
+
+  {% elif step == "accounts" %}
+  {% if accounts %}<p>{{ t.accounts_intro }}</p>{% endif %}
+  {% for account in accounts %}
+  <div class="account">
+    <h2>{{ account.name }}</h2>
+    {% if account.status %}
+    <p class="ok">{{ account.status }}</p>
+    {% else %}
+    <p>{{ account.what }}</p>
+    <p class="muted">{{ t.logged_out }}</p>
+    <form method="post" action="{{ action }}">{% csrf_token %}
+      <input type="hidden" name="step" value="delete">
+      <input type="hidden" name="verified" value="{{ verified }}">
+      <input type="hidden" name="which" value="{{ account.which }}">
+      <label><input type="checkbox" name="sure" value="1" required> {{ t.confirm }}</label>
+      <button class="danger" type="submit">{{ t.delete }}</button>
+    </form>
+    {% endif %}
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  <p class="muted">{{ help }}</p>
+</section>
+{% endblock %}

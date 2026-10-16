@@ -1,0 +1,35 @@
+# Flutter/Dart workspace for WellWish (Dart pub workspaces + melos).
+# One `flutter pub get` here resolves every app and package together.
+name: wellwish_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.13.3
+
+workspace:
+  - apps/patient_app
+  - apps/partner_app
+  - packages/ww_ui
+  - packages/ww_core
+  - packages/ww_l10n
+  - packages/ww_auth
+
+# melos 8 needs to be a dev dependency here to recognise the workspace.
+# Code generators that clash with it (e.g. flutter_launcher_icons) are run as global tools.
+dev_dependencies:
+  melos: ^8.9.0
+
+melos:
+  scripts:
+    analyze:
+      description: flutter analyze in every app and package
+      exec:
+        command: flutter analyze --no-fatal-infos
+        concurrency: 1
+    test:
+      description: flutter test in every app and package that has tests
+      exec:
+        command: flutter test
+        concurrency: 1
+      packageFilters:
+        dirExists: test

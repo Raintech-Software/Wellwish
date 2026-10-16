@@ -1,0 +1,32 @@
+name: ww_core
+description: "WellWish app plumbing: config, API client, errors, token storage, WebSocket."
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.13.3
+  flutter: ">=1.17.0"
+
+resolution: workspace
+
+dependencies:
+  dio: ^5.11.1
+  file_picker: ^13.1.0
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^11.2.0
+  geolocator: ^14.1.1
+  image_picker: ^1.2.4
+  open_filex: ^4.7.0
+  path_provider: ^2.1.6
+  sentry: ^10.0.0
+  url_launcher: ^6.3.3
+  web_socket_channel: ^3.0.3
+  ww_api:
+    path: ../ww_api
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+

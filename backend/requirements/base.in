@@ -1,0 +1,20 @@
+# Runtime dependencies (production + development).
+# Edit this file, then re-pin with:  .\ww.ps1 pin
+Django>=5.2,<5.3
+django-ninja>=1.4,<2
+django-environ
+psycopg[binary]>=3.2,<4
+redis>=5
+celery>=5.5,<6
+django-celery-beat
+channels>=4.2,<5
+channels-redis>=4.2,<5
+uvicorn[standard]
+django-storages[s3]
+PyJWT
+pyotp
+argon2-cffi
+cryptography  # Fernet: staff TOTP secrets are stored encrypted
+google-auth   # verifies Google sign-in ID tokens
+requests      # MSG91 SMS API, google-auth transport
+sentry-sdk

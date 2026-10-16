@@ -1,0 +1,10 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+
+# The project's Dart width (dart format reads it here).
+formatter:
+  page_width: 120

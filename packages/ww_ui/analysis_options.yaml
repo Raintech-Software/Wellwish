@@ -1,0 +1,18 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+
+# The project's Dart width (dart format reads it here).
+formatter:
+  page_width: 120
